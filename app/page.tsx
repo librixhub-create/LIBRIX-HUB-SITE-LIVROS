@@ -11,8 +11,8 @@ const T: Record<string, Record<string, string>> = {
     "nav.plans": "Planos", "nav.services": "Serviços",
     "nav.testimonials": "Depoimentos", "nav.contact": "Contacto",
     "hero.badge": "Publicação Editorial Profissional",
-    "hero.title": "Da ideia ao livro publicado.",
-    "hero.subtitle": "Especialistas em criar publicações digitais de alta qualidade, prontas para lançamento na Amazon KDP e outras plataformas.",
+    "hero.title": "Escreveu o livro. Agora deixe-nos torná-lo profissional.",
+    "hero.subtitle": "Da formatação à Amazon KDP, cuidamos de cada detalhe para que o seu livro tenha a qualidade das grandes editoras.",
     "form.label": "Orçamento Grátis",
     "form.title": "Qual é o plano ideal para o seu projeto?",
     "form.desc": "Conte-nos sobre o seu livro e ajudaremos a escolher o melhor plano. Resposta em menos de 24 horas.",
@@ -71,8 +71,8 @@ const T: Record<string, Record<string, string>> = {
     "nav.plans": "Planos", "nav.services": "Serviços",
     "nav.testimonials": "Depoimentos", "nav.contact": "Contato",
     "hero.badge": "Publicação Editorial Profissional",
-    "hero.title": "Da ideia ao livro publicado.",
-    "hero.subtitle": "Especialistas em criar publicações digitais de alta qualidade, prontas para lançamento na Amazon KDP.",
+    "hero.title": "Escreveu o livro. Agora deixe-nos torná-lo profissional.",
+    "hero.subtitle": "Da formatação à Amazon KDP, cuidamos de cada detalhe para que o seu livro tenha a qualidade das grandes editoras.",
     "form.label": "Orçamento Grátis",
     "form.title": "Qual é o plano ideal para seu projeto?",
     "form.desc": "Conte-nos sobre seu livro e ajudaremos a escolher o melhor plano. Resposta em menos de 24 horas.",
@@ -131,8 +131,8 @@ const T: Record<string, Record<string, string>> = {
     "nav.plans": "Planes", "nav.services": "Servicios",
     "nav.testimonials": "Testimonios", "nav.contact": "Contacto",
     "hero.badge": "Publicación Editorial Profesional",
-    "hero.title": "De la idea al libro publicado.",
-    "hero.subtitle": "Especialistas en crear publicaciones digitales de alta calidad, listas para el lanzamiento en Amazon KDP.",
+    "hero.title": "Escribiste el libro. Ahora déjanos hacerlo profesional.",
+    "hero.subtitle": "Desde el diseño hasta Amazon KDP, cuidamos cada detalle para que su libro tenga la calidad de las grandes editoriales.",
     "form.label": "Presupuesto Gratis",
     "form.title": "¿Cuál es el plan ideal para tu proyecto?",
     "form.desc": "Cuéntanos sobre tu libro y te ayudaremos a elegir el mejor plan. Respuesta en menos de 24 horas.",
@@ -191,8 +191,8 @@ const T: Record<string, Record<string, string>> = {
     "nav.plans": "Plans", "nav.services": "Services",
     "nav.testimonials": "Testimonials", "nav.contact": "Contact",
     "hero.badge": "Professional Editorial Publishing",
-    "hero.title": "From idea to published book.",
-    "hero.subtitle": "Specialists in creating high-quality digital publications, ready for launch on Amazon KDP and other platforms.",
+    "hero.title": "You wrote the book. Now let us make it professional.",
+    "hero.subtitle": "From formatting to Amazon KDP, we take care of every detail so your book has the quality of major publishers.",
     "form.label": "Free Quote",
     "form.title": "What's the ideal plan for your project?",
     "form.desc": "Tell us about your book and we'll help you choose the best plan. Response within 24 hours.",
@@ -251,8 +251,8 @@ const T: Record<string, Record<string, string>> = {
     "nav.plans": "Piani", "nav.services": "Servizi",
     "nav.testimonials": "Testimonianze", "nav.contact": "Contatto",
     "hero.badge": "Pubblicazione Editoriale Professionale",
-    "hero.title": "Dall'idea al libro pubblicato.",
-    "hero.subtitle": "Specialisti nella creazione di pubblicazioni digitali di alta qualità, pronte per il lancio su Amazon KDP.",
+    "hero.title": "Hai scritto il libro. Ora lascia che lo rendiamo professionale.",
+    "hero.subtitle": "Dalla formattazione ad Amazon KDP, ci occupiamo di ogni dettaglio affinché il tuo libro abbia la qualità delle grandi case editrici.",
     "form.label": "Preventivo Gratuito",
     "form.title": "Qual è il piano ideale per il tuo progetto?",
     "form.desc": "Raccontaci del tuo libro e ti aiuteremo a scegliere il piano migliore. Risposta in meno di 24 ore.",
@@ -331,7 +331,7 @@ export default function HomePage() {
   const t = (key: string) => T[lang]?.[key] ?? T["pt-pt"]?.[key] ?? key;
 
   function renderH1(title: string) {
-    const phrases = ["ao livro publicado", "al libro publicado", "al libro pubblicato", "to published book"];
+    const phrases = ["torná-lo profissional", "hacerlo profesional", "make it professional", "lo rendiamo professionale"];
     for (const p of phrases) {
       const idx = title.toLowerCase().indexOf(p);
       if (idx !== -1) return <>{title.slice(0, idx)}<em>{title.slice(idx, idx + p.length)}</em>{title.slice(idx + p.length)}</>;
