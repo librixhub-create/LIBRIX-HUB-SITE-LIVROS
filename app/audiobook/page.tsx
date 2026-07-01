@@ -138,7 +138,7 @@ export default function AudiobookPage() {
       `}</style>
 
       <nav>
-        <Link href="/" className="nav-logo"><Image src="/logo.png" alt="Librix Hub" width={120} height={32} /></Link>
+        <Link href="/" className="nav-logo"><Image src="/logo.png" alt="Librix Hub" width={1536} height={1024} style={{ height: "48px", width: "auto" }} /></Link>
         <Link href="/" className="nav-back">
           <svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
           Voltar à página principal
@@ -322,7 +322,7 @@ export default function AudiobookPage() {
         <div className="footer-inner">
           <div className="footer-top">
             <div>
-              <Image src="/logo.png" alt="Librix Hub" width={120} height={34} style={{marginBottom:16,display:"block"}}/>
+              <Image src="/logo-white.png" alt="Librix Hub" width={1536} height={1024} style={{height:"44px",width:"auto",marginBottom:16,display:"block"}}/>
               <p style={{fontSize:".83rem",color:"rgba(255,255,255,.4)",lineHeight:1.65,maxWidth:260,marginBottom:18}}>Transformamos ideias em livros, audiobooks e publicações profissionais de alto impacto.</p>
             </div>
             <div className="footer-col">

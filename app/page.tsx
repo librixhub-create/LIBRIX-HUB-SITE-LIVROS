@@ -470,7 +470,7 @@ export default function HomePage() {
       <header className={scrolled ? "scrolled" : ""}>
         <div className="header-inner">
           <a href="#" className="logo">
-            <Image src="/logo.png" alt="Librix Hub" width={140} height={34} />
+            <Image src="/logo.png" alt="Librix Hub" width={1536} height={1024} style={{ height: "48px", width: "auto" }} />
           </a>
           <nav>
             <a href="#categorias">{t("nav.categories")}</a>
@@ -872,7 +872,7 @@ export default function HomePage() {
         <div className="footer-inner">
           <div className="footer-top">
             <div>
-              <Image src="/logo.png" alt="Librix Hub" width={120} height={30} style={{ marginBottom: 14, opacity: .9 }} />
+              <Image src="/logo-white.png" alt="Librix Hub" width={1536} height={1024} style={{ height: "44px", width: "auto", marginBottom: 14, display: "block" }} />
               <p style={{ fontSize: ".8rem", lineHeight: 1.65, maxWidth: 250, marginBottom: 18 }}>{t("footer.desc")}</p>
               <div className="footer-plans-row">
                 {["📚 Essencial","📗 Avançado","⭐ Premium","🏆 Ouro Exclusivo","💎 Plano Especial Ultra","🎙️ Audiobook","🌍 Tradução","📜 Registo ISBN","🚀 Amazon KDP"].map((p) => (

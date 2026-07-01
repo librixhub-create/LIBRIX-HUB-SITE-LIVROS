@@ -141,7 +141,7 @@ export default function CinematograficoPage() {
       `}</style>
 
       <nav>
-        <Link href="/" style={{display:"block"}}><Image src="/logo.png" alt="Librix Hub" width={120} height={32} /></Link>
+        <Link href="/" style={{display:"block"}}><Image src="/logo-white.png" alt="Librix Hub" width={1536} height={1024} style={{ height: "48px", width: "auto" }} /></Link>
         <Link href="/" className="nav-back">
           <svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
           Voltar
@@ -352,7 +352,7 @@ export default function CinematograficoPage() {
         <div className="footer-inner">
           <div className="footer-top">
             <div>
-              <Image src="/logo.png" alt="Librix Hub" width={120} height={32} style={{marginBottom:14,display:"block"}}/>
+              <Image src="/logo-white.png" alt="Librix Hub" width={1536} height={1024} style={{height:"44px",width:"auto",marginBottom:14,display:"block"}}/>
               <p style={{fontSize:".82rem",color:"var(--text3)",lineHeight:1.65,maxWidth:260,fontFamily:"'Inter',sans-serif"}}>Transformamos livros em experiências visuais profissionais.</p>
             </div>
             <div className="footer-col">
