@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     locale: "pt_PT",
   },
   twitter: { card: "summary_large_image" },
+};
+
+export const viewport: Viewport = {
   themeColor: "#0c1a3e",
 };
 
