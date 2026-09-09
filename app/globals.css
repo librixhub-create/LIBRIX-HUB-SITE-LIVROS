@@ -246,15 +246,9 @@ nav a:hover { color: var(--ink); }
   overflow: hidden; text-decoration: none; transition: box-shadow .3s, border-color .2s;
 }
 .book-card:hover { box-shadow: var(--sh-lg); border-color: var(--gold); }
-.book-cover {
-  position: relative; display: flex; align-items: center; justify-content: center;
-  height: 128px; padding: 16px; text-align: center;
-}
-.book-cover-title {
-  font-family: 'Fraunces', Georgia, serif; font-size: .88rem; font-weight: 600;
-  color: #fff; line-height: 1.3;
-}
-.book-info { padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 10px; }
+.book-cover { position: relative; width: 100%; aspect-ratio: 2/3; background: var(--cream3); }
+.book-info { padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 8px; }
+.book-title { font-family: 'Fraunces', Georgia, serif; font-size: .85rem; font-weight: 600; color: var(--ink); line-height: 1.3; }
 .book-genre { font-size: .68rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--ink3); }
 .book-link { font-size: .8rem; font-weight: 600; color: var(--gold); }
 

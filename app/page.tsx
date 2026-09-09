@@ -325,13 +325,13 @@ const T: Record<string, Record<string, string>> = {
 };
 
 const PUBLISHED_BOOKS = [
-  { title: "O Pequeno Charlley", genre: "Infantil", url: "https://www.amazon.com.br/dp/B0H4P4CJ2H", cover: "#2d5a3d" },
-  { title: "Governe-se: Metanoia, a Ciência do Inconsciente", genre: "Desenvolvimento pessoal", url: "https://www.amazon.com.br/dp/B0HFGRBXVK", cover: "#4a5568" },
-  { title: "Diário de uma Diarista", genre: "Biografia", url: "https://www.amazon.com.br/dp/B0HBLSBFV8", cover: "#a8552f" },
-  { title: "Entre Mundos: Um Chamado Phoenix", genre: "Ficção", url: "https://www.amazon.com.br/dp/B0H7VNSZB6", cover: "#5a3e6b" },
-  { title: "The Inverted Rose", genre: "Fantasia", url: "https://www.amazon.com.br/dp/B0HH16JX4T", cover: "#8b6914" },
-  { title: "Produtos do Setor Segurador para Empreendedores", genre: "Negócios", url: "https://www.amazon.com.br/dp/B0H42R4VKB", cover: "#C9A84C" },
-  { title: "Comfort Is Your Worst Enemy: Insecurity", genre: "Autoajuda", url: "https://www.amazon.com.br/dp/B0GVYVNWPF", cover: "#1e3329" },
+  { title: "O Pequeno Charlley", genre: "Infantil", url: "https://www.amazon.com.br/dp/B0H4P4CJ2H", cover: "/covers/charlley.jpg" },
+  { title: "Governe-se: Metanoia, a Ciência do Inconsciente ao Altar", genre: "Desenvolvimento pessoal", url: "https://www.amazon.com.br/dp/B0HFGRBXVK", cover: "/covers/governese.jpg" },
+  { title: "O Diário de uma Diarista", genre: "Romance", url: "https://www.amazon.com.br/dp/B0HBLSBFV8", cover: "/covers/diariodiarista.jpg" },
+  { title: "Entre Mundos: O Chamado", genre: "Ficção", url: "https://www.amazon.com.br/dp/B0H7VNSZB6", cover: "/covers/entremundos.jpg" },
+  { title: "The Inverted Rose", genre: "Fantasia", url: "https://www.amazon.com.br/dp/B0HH16JX4T", cover: "/covers/invertedrose.jpg" },
+  { title: "Produtos do Setor Segurador para Empreendedores", genre: "Negócios", url: "https://www.amazon.com.br/dp/B0H42R4VKB", cover: "/covers/setorsegurador.jpg" },
+  { title: "Comfort Is Your Worst Enemy", genre: "Autoajuda", url: "https://www.amazon.com.br/dp/B0GVYVNWPF", cover: "/covers/comfort.jpg" },
 ] as const;
 
 const WA_SVG = (
@@ -530,10 +530,11 @@ export default function HomePage() {
           <div className="books-grid">
             {PUBLISHED_BOOKS.map((book) => (
               <a key={book.url} href={book.url} target="_blank" rel="noopener noreferrer" className="book-card reveal">
-                <div className="book-cover" style={{ background: book.cover }}>
-                  <span className="book-cover-title">{book.title}</span>
+                <div className="book-cover">
+                  <Image src={book.cover} alt={`Capa do livro ${book.title}`} fill sizes="(min-width: 1024px) 25vw, (min-width: 640px) 33vw, 50vw" style={{ objectFit: "cover" }} />
                 </div>
                 <div className="book-info">
+                  <span className="book-title">{book.title}</span>
                   <span className="book-genre">{book.genre}</span>
                   <span className="book-link">{t("books.cta")} →</span>
                 </div>
