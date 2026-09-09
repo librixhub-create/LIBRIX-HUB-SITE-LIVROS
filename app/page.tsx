@@ -8,8 +8,11 @@ function waLink(msg: string) { return `${WA_BASE}?text=${encodeURIComponent(msg)
 
 const T: Record<string, Record<string, string>> = {
   "pt-pt": {
-    "nav.plans": "Planos", "nav.services": "Serviços",
+    "nav.plans": "Planos", "nav.services": "Serviços", "nav.books": "Livros",
     "nav.testimonials": "Depoimentos", "nav.contact": "Contacto",
+    "books.label": "Portfólio", "books.title": "Livros que já publicámos",
+    "books.subtitle": "Alguns dos livros de autores que confiaram na Librix Hub — à venda hoje na Amazon.",
+    "books.cta": "Ver na Amazon",
     "hero.badge": "Publicação Editorial Profissional",
     "hero.title": "Escreveu o livro. Agora deixe-nos torná-lo profissional.",
     "hero.subtitle": "Da formatação à Amazon KDP, cuidamos de cada detalhe para que o seu livro tenha a qualidade das grandes editoras.",
@@ -68,8 +71,11 @@ const T: Record<string, Record<string, string>> = {
     "quiz.nok": "Não sabe qual plano escolher? Faça o quiz",
   },
   "pt-br": {
-    "nav.plans": "Planos", "nav.services": "Serviços",
+    "nav.plans": "Planos", "nav.services": "Serviços", "nav.books": "Livros",
     "nav.testimonials": "Depoimentos", "nav.contact": "Contato",
+    "books.label": "Portfólio", "books.title": "Livros que já publicamos",
+    "books.subtitle": "Alguns dos livros de autores que confiaram na Librix Hub — à venda hoje na Amazon.",
+    "books.cta": "Ver na Amazon",
     "hero.badge": "Publicação Editorial Profissional",
     "hero.title": "Escreveu o livro. Agora deixe-nos torná-lo profissional.",
     "hero.subtitle": "Da formatação à Amazon KDP, cuidamos de cada detalhe para que o seu livro tenha a qualidade das grandes editoras.",
@@ -128,8 +134,11 @@ const T: Record<string, Record<string, string>> = {
     "quiz.nok": "Não sabe qual plano escolher? Faça o quiz",
   },
   "es": {
-    "nav.plans": "Planes", "nav.services": "Servicios",
+    "nav.plans": "Planes", "nav.services": "Servicios", "nav.books": "Libros",
     "nav.testimonials": "Testimonios", "nav.contact": "Contacto",
+    "books.label": "Portafolio", "books.title": "Libros que ya publicamos",
+    "books.subtitle": "Algunos de los libros de autores que confiaron en Librix Hub — a la venta hoy en Amazon.",
+    "books.cta": "Ver en Amazon",
     "hero.badge": "Publicación Editorial Profesional",
     "hero.title": "Escribiste el libro. Ahora déjanos hacerlo profesional.",
     "hero.subtitle": "Desde el diseño hasta Amazon KDP, cuidamos cada detalle para que su libro tenga la calidad de las grandes editoriales.",
@@ -188,8 +197,11 @@ const T: Record<string, Record<string, string>> = {
     "quiz.nok": "¿No sabes qué plan elegir? Haz el quiz",
   },
   "en": {
-    "nav.plans": "Plans", "nav.services": "Services",
+    "nav.plans": "Plans", "nav.services": "Services", "nav.books": "Books",
     "nav.testimonials": "Testimonials", "nav.contact": "Contact",
+    "books.label": "Portfolio", "books.title": "Books we've already published",
+    "books.subtitle": "Some of the books from authors who trusted Librix Hub — on sale today on Amazon.",
+    "books.cta": "View on Amazon",
     "hero.badge": "Professional Editorial Publishing",
     "hero.title": "You wrote the book. Now let us make it professional.",
     "hero.subtitle": "From formatting to Amazon KDP, we take care of every detail so your book has the quality of major publishers.",
@@ -248,8 +260,11 @@ const T: Record<string, Record<string, string>> = {
     "quiz.nok": "Not sure which plan? Take the quiz",
   },
   "it": {
-    "nav.plans": "Piani", "nav.services": "Servizi",
+    "nav.plans": "Piani", "nav.services": "Servizi", "nav.books": "Libri",
     "nav.testimonials": "Testimonianze", "nav.contact": "Contatto",
+    "books.label": "Portfolio", "books.title": "Libri che abbiamo già pubblicato",
+    "books.subtitle": "Alcuni dei libri di autori che si sono affidati a Librix Hub — in vendita oggi su Amazon.",
+    "books.cta": "Vedi su Amazon",
     "hero.badge": "Pubblicazione Editoriale Professionale",
     "hero.title": "Hai scritto il libro. Ora lascia che lo rendiamo professionale.",
     "hero.subtitle": "Dalla formattazione ad Amazon KDP, ci occupiamo di ogni dettaglio affinché il tuo libro abbia la qualità delle grandi case editrici.",
@@ -308,6 +323,16 @@ const T: Record<string, Record<string, string>> = {
     "quiz.nok": "Non sai quale piano scegliere? Fai il quiz",
   },
 };
+
+const PUBLISHED_BOOKS = [
+  { title: "O Pequeno Charlley", genre: "Infantil", url: "https://www.amazon.com.br/dp/B0H4P4CJ2H", cover: "#2d5a3d" },
+  { title: "Governe-se: Metanoia, a Ciência do Inconsciente", genre: "Desenvolvimento pessoal", url: "https://www.amazon.com.br/dp/B0HFGRBXVK", cover: "#4a5568" },
+  { title: "Diário de uma Diarista", genre: "Biografia", url: "https://www.amazon.com.br/dp/B0HBLSBFV8", cover: "#a8552f" },
+  { title: "Entre Mundos: Um Chamado Phoenix", genre: "Ficção", url: "https://www.amazon.com.br/dp/B0H7VNSZB6", cover: "#5a3e6b" },
+  { title: "The Inverted Rose", genre: "Fantasia", url: "https://www.amazon.com.br/dp/B0HH16JX4T", cover: "#8b6914" },
+  { title: "Produtos do Setor Segurador para Empreendedores", genre: "Negócios", url: "https://www.amazon.com.br/dp/B0H42R4VKB", cover: "#C9A84C" },
+  { title: "Comfort Is Your Worst Enemy: Insecurity", genre: "Autoajuda", url: "https://www.amazon.com.br/dp/B0GVYVNWPF", cover: "#1e3329" },
+] as const;
 
 const WA_SVG = (
   <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
@@ -414,6 +439,7 @@ export default function HomePage() {
           <nav>
             <a href="#planos">{t("nav.plans")}</a>
             <a href="#servicos">{t("nav.services")}</a>
+            <a href="#livros">{t("nav.books")}</a>
             <a href="#depoimentos">{t("nav.testimonials")}</a>
             <a href="#orcamento">{t("nav.contact")}</a>
           </nav>
@@ -436,6 +462,7 @@ export default function HomePage() {
       <div className={`mobile-menu${mobileOpen ? " open" : ""}`}>
         <a href="#planos" onClick={() => setMobileOpen(false)}>{t("nav.plans")}</a>
         <a href="#servicos" onClick={() => setMobileOpen(false)}>{t("nav.services")}</a>
+        <a href="#livros" onClick={() => setMobileOpen(false)}>{t("nav.books")}</a>
         <a href="#depoimentos" onClick={() => setMobileOpen(false)}>{t("nav.testimonials")}</a>
         <a href="#orcamento" onClick={() => setMobileOpen(false)}>{t("nav.contact")}</a>
         <div className="mobile-lang">
@@ -491,6 +518,30 @@ export default function HomePage() {
           </div>
         </div>
       </div>
+
+      {/* PUBLISHED BOOKS */}
+      <section className="section" id="livros">
+        <div className="container">
+          <div className="section-header reveal">
+            <span className="eyebrow">{t("books.label")}</span>
+            <h2>{t("books.title")}</h2>
+            <p className="lead">{t("books.subtitle")}</p>
+          </div>
+          <div className="books-grid">
+            {PUBLISHED_BOOKS.map((book) => (
+              <a key={book.url} href={book.url} target="_blank" rel="noopener noreferrer" className="book-card reveal">
+                <div className="book-cover" style={{ background: book.cover }}>
+                  <span className="book-cover-title">{book.title}</span>
+                </div>
+                <div className="book-info">
+                  <span className="book-genre">{book.genre}</span>
+                  <span className="book-link">{t("books.cta")} →</span>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* SERVICES */}
       <section className="section section-alt" id="servicos">
