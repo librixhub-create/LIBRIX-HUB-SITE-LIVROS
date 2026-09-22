@@ -253,7 +253,7 @@ nav a:hover { color: var(--ink); }
 .book-link { font-size: .8rem; font-weight: 600; color: var(--gold); }
 
 /* ── TESTIMONIALS ── */
-.testi-grid { display: grid; grid-template-columns: repeat(6,1fr); gap: 10px; }
+.testi-grid { display: grid; grid-template-columns: repeat(7,1fr); gap: 10px; }
 .testi-card {
   background: var(--cream3); border: 1px solid var(--border);
   border-radius: var(--radius); overflow: hidden; transition: box-shadow .22s;
