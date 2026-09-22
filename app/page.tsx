@@ -35,7 +35,7 @@ const T: Record<string, Record<string, string>> = {
     "p2.f1": "Tudo do Essencial", "p2.f2": "2 Capas 3D",
     "p2.f3": "20 ilustrações", "p2.f4": "1 alteração grátis",
     "p3.name": "Premium", "p3.desc": "O mais escolhido",
-    "p3.f1": "Tudo do Avançado", "p3.f2": "Contracapa + Lombada",
+    "p3.f1": "Tudo do Essencial", "p3.f2": "Contracapa + Lombada",
     "p3.f3": "35 ilustrações", "p3.f4": "2 alterações grátis", "p3.f5": "Guia Amazon",
     "p4.name": "Ouro Exclusivo", "p4.desc": "Serviço completo",
     "p4.f1": "Tudo do Premium", "p4.f2": "50 artes exclusivas",
@@ -47,7 +47,7 @@ const T: Record<string, Record<string, string>> = {
     "audio.name": "Audiobook Profissional", "audio.desc": "Voz narrada profissional e realista — masculina ou feminina, em PT, ES, EN, IT e outros.",
     "srv3.name": "Tradução Profissional", "srv3.desc": "Tradução editorial de livros e documentos em vários idiomas. Mantemos a sua voz.",
     "cine.name": "Vídeo Cinematográfico", "cine.desc": "Trailers estilo filme para o seu livro — Reels, TikTok e YouTube que vendem e emocionam.",
-    "ultra.badge": "Plano Especial Ultra",
+    "ultra.badge": "Ultra Premium",
     "ultra.title": "Tudo o que precisa num plano",
     "ultra.desc": "A solução mais completa para autores que querem publicar com excelência.",
     "ultra.f1": "Todos os recursos do Plano Premium",
@@ -98,7 +98,7 @@ const T: Record<string, Record<string, string>> = {
     "p2.f1": "Tudo do Essencial", "p2.f2": "2 Capas 3D",
     "p2.f3": "20 ilustrações", "p2.f4": "1 alteração grátis",
     "p3.name": "Premium", "p3.desc": "O mais escolhido",
-    "p3.f1": "Tudo do Avançado", "p3.f2": "Contracapa + Lombada",
+    "p3.f1": "Tudo do Essencial", "p3.f2": "Contracapa + Lombada",
     "p3.f3": "35 ilustrações", "p3.f4": "2 alterações grátis", "p3.f5": "Guia Amazon",
     "p4.name": "Ouro Exclusivo", "p4.desc": "Serviço completo",
     "p4.f1": "Tudo do Premium", "p4.f2": "50 artes exclusivas",
@@ -110,7 +110,7 @@ const T: Record<string, Record<string, string>> = {
     "audio.name": "Audiobook Profissional", "audio.desc": "Voz narrada profissional e realista — masculina ou feminina, em PT, ES, EN, IT e outros.",
     "srv3.name": "Tradução Profissional", "srv3.desc": "Tradução editorial de livros e documentos em vários idiomas. Mantemos a sua voz.",
     "cine.name": "Vídeo Cinematográfico", "cine.desc": "Trailers estilo filme para seu livro — Reels, TikTok e YouTube que vendem e emocionam.",
-    "ultra.badge": "Plano Especial Ultra",
+    "ultra.badge": "Ultra Premium",
     "ultra.title": "Tudo o que precisa em um plano",
     "ultra.desc": "A solução mais completa para autores que querem publicar com excelência.",
     "ultra.f1": "Todos os recursos do Plano Premium",
@@ -161,7 +161,7 @@ const T: Record<string, Record<string, string>> = {
     "p2.f1": "Todo lo Esencial", "p2.f2": "2 Portadas 3D",
     "p2.f3": "20 ilustraciones", "p2.f4": "1 modificación gratis",
     "p3.name": "Premium", "p3.desc": "El más elegido",
-    "p3.f1": "Todo lo Avanzado", "p3.f2": "Contraportada + Lomo",
+    "p3.f1": "Todo lo Esencial", "p3.f2": "Contraportada + Lomo",
     "p3.f3": "35 ilustraciones", "p3.f4": "2 modificaciones gratis", "p3.f5": "Guía Amazon",
     "p4.name": "Oro Exclusivo", "p4.desc": "Servicio completo",
     "p4.f1": "Todo lo Premium", "p4.f2": "50 artes exclusivas",
@@ -173,7 +173,7 @@ const T: Record<string, Record<string, string>> = {
     "audio.name": "Audiolibro Profesional", "audio.desc": "Voz narrada profesional y realista — masculina o femenina, en PT, ES, EN, IT y otros.",
     "srv3.name": "Traducción Profesional", "srv3.desc": "Traducción editorial de libros y documentos en varios idiomas. Mantenemos tu voz.",
     "cine.name": "Vídeo Cinematográfico", "cine.desc": "Tráilers estilo película para tu libro — Reels, TikTok y YouTube que venden y emocionan.",
-    "ultra.badge": "Plan Especial Ultra",
+    "ultra.badge": "Ultra Premium",
     "ultra.title": "Todo lo que necesitas en un plan",
     "ultra.desc": "La solución más completa para autores que quieren publicar con excelencia.",
     "ultra.f1": "Todos los recursos del Plan Premium",
@@ -224,7 +224,7 @@ const T: Record<string, Record<string, string>> = {
     "p2.f1": "Everything in Essential", "p2.f2": "2 3D Covers",
     "p2.f3": "20 illustrations", "p2.f4": "1 free revision",
     "p3.name": "Premium", "p3.desc": "Most chosen",
-    "p3.f1": "Everything in Advanced", "p3.f2": "Back cover + Spine",
+    "p3.f1": "Everything in Essential", "p3.f2": "Back cover + Spine",
     "p3.f3": "35 illustrations", "p3.f4": "2 free revisions", "p3.f5": "Amazon guide",
     "p4.name": "Exclusive Gold", "p4.desc": "Full service",
     "p4.f1": "Everything in Premium", "p4.f2": "50 exclusive artworks",
@@ -236,7 +236,7 @@ const T: Record<string, Record<string, string>> = {
     "audio.name": "Professional Audiobook", "audio.desc": "Professional narrated voice — male or female, in PT, ES, EN, IT and more.",
     "srv3.name": "Professional Translation", "srv3.desc": "Editorial translation of books and documents in multiple languages. We keep your voice.",
     "cine.name": "Cinematic Video", "cine.desc": "Movie-style trailers for your book — Reels, TikTok and YouTube that sell and move.",
-    "ultra.badge": "Ultra Special Plan",
+    "ultra.badge": "Ultra Premium",
     "ultra.title": "Everything you need in one plan",
     "ultra.desc": "The most complete solution for authors who want to publish with excellence.",
     "ultra.f1": "All Premium Plan features",
@@ -287,7 +287,7 @@ const T: Record<string, Record<string, string>> = {
     "p2.f1": "Tutto dall'Essenziale", "p2.f2": "2 Copertine 3D",
     "p2.f3": "20 illustrazioni", "p2.f4": "1 revisione gratuita",
     "p3.name": "Premium", "p3.desc": "Il più scelto",
-    "p3.f1": "Tutto dall'Avanzato", "p3.f2": "Quarta di copertina + Dorso",
+    "p3.f1": "Tutto dall'Essenziale", "p3.f2": "Quarta di copertina + Dorso",
     "p3.f3": "35 illustrazioni", "p3.f4": "2 revisioni gratuite", "p3.f5": "Guida Amazon",
     "p4.name": "Oro Esclusivo", "p4.desc": "Servizio completo",
     "p4.f1": "Tutto dal Premium", "p4.f2": "50 artwork esclusivi",
@@ -299,7 +299,7 @@ const T: Record<string, Record<string, string>> = {
     "audio.name": "Audiobook Professionale", "audio.desc": "Voce narrata professionale e realistica — maschile o femminile, in PT, ES, EN, IT e altri.",
     "srv3.name": "Traduzione Professionale", "srv3.desc": "Traduzione editoriale di libri e documenti in vari idiomi. Manteniamo la tua voce.",
     "cine.name": "Video Cinematografico", "cine.desc": "Trailer stile film per il tuo libro — Reels, TikTok e YouTube che vendono ed emozionano.",
-    "ultra.badge": "Piano Speciale Ultra",
+    "ultra.badge": "Ultra Premium",
     "ultra.title": "Tutto ciò di cui hai bisogno in un piano",
     "ultra.desc": "La soluzione più completa per autori che vogliono pubblicare con eccellenza.",
     "ultra.f1": "Tutte le risorse del Piano Premium",
@@ -414,7 +414,7 @@ export default function HomePage() {
 
   function computeQuizResult() {
     const a = quizAnswers;
-    if (a.q4 === "full" || a.q3 === "sell") return { icon: "◆", plan: t("p4.name"), desc: "Com base nas suas respostas, o Ouro Exclusivo oferece tudo o que precisa para um livro de alto impacto." };
+    if (a.q4 === "full" || a.q3 === "sell") return { icon: "◆", plan: "Ultra Premium", desc: "Com base nas suas respostas, o Ultra Premium oferece tudo o que precisa para um livro de alto impacto." };
     if (a.q4 === "mid") return { icon: "◇", plan: t("p3.name"), desc: "O Premium é o mais escolhido e inclui tudo para uma publicação profissional completa." };
     return { icon: "○", plan: t("p1.name"), desc: "O Essencial é o ponto de partida ideal para o seu projeto." };
   }
@@ -582,7 +582,7 @@ export default function HomePage() {
                 <h3>{t("srv2.name")}</h3>
                 <p>{t("srv2.desc")}</p>
               </div>
-              <a href="#orcamento" className="srv-arrow">Solicitar <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" /></svg></a>
+              <a href="#publicacao-amazon" className="srv-arrow">Ver detalhes <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" /></svg></a>
             </div>
             <div className="srv-row reveal">
               <span className="srv-num">05</span>
@@ -639,16 +639,6 @@ export default function HomePage() {
               </ul>
               <button className="plan-btn" onClick={() => setPlan(t("p1.name"))}>{t("plans.cta")}</button>
             </div>
-            <div className="plan-card reveal">
-              <p className="plan-name">{t("p2.name")}</p>
-              <p className="plan-desc">{t("p2.desc")}</p>
-              <ul className="plan-feats">
-                {["p2.f1","p2.f2","p2.f3","p2.f4","plans.review"].map((k) => (
-                  <li key={k} className="plan-feat"><span className="plan-feat-ok">✓</span><span>{t(k)}</span></li>
-                ))}
-              </ul>
-              <button className="plan-btn" onClick={() => setPlan(t("p2.name"))}>{t("plans.cta")}</button>
-            </div>
             <div className="plan-card featured reveal">
               <div className="plan-badge">Popular</div>
               <p className="plan-name">{t("p3.name")}</p>
@@ -661,14 +651,14 @@ export default function HomePage() {
               <button className="plan-btn" onClick={() => setPlan(t("p3.name"))}>{t("plans.cta")}</button>
             </div>
             <div className="plan-card reveal">
-              <p className="plan-name">{t("p4.name")}</p>
-              <p className="plan-desc">{t("p4.desc")}</p>
+              <p className="plan-name">{t("ultra.badge")}</p>
+              <p className="plan-desc">{t("ultra.desc")}</p>
               <ul className="plan-feats">
-                {["p4.f1","p4.f2","p4.f3","p4.f4","p4.f5","p4.f6","plans.review"].map((k) => (
+                {["ultra.f1","ultra.f2","ultra.f3","ultra.f5","ultra.f7","plans.review"].map((k) => (
                   <li key={k} className="plan-feat"><span className="plan-feat-ok">✓</span><span>{t(k)}</span></li>
                 ))}
               </ul>
-              <button className="plan-btn" onClick={() => setPlan(t("p4.name"))}>{t("plans.cta")}</button>
+              <button className="plan-btn" onClick={() => setPlan("Ultra Premium")}>{t("plans.cta")}</button>
             </div>
           </div>
           <p style={{ textAlign: "center", marginTop: 28 }}>
@@ -744,10 +734,76 @@ export default function HomePage() {
               <div key={k} className="ultra-feat"><span className="ultra-feat-ok">✓</span><span>{t(k)}</span></div>
             ))}
           </div>
-          <button className="btn-gold" onClick={() => setPlan("Plano Especial")}>
+          <button className="btn-gold" onClick={() => setPlan("Ultra Premium")}>
             {t("ultra.cta")}
             <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
           </button>
+        </div>
+      </section>
+
+      {/* PUBLICAÇÃO AMAZON — plano separado */}
+      <section className="section section-alt" id="publicacao-amazon">
+        <div className="container">
+          <div className="section-header reveal">
+            <span className="eyebrow">Plano separado · Add-on</span>
+            <h2>Publicação na Amazon <em>Completo</em></h2>
+            <p className="lead">Publicação Amazon KDP nas versões Kindle, capa comum e capa dura.</p>
+          </div>
+
+          <div className="amazon-plan-card reveal">
+            <div className="amazon-plan-group">
+              <h4>Serviços incluídos</h4>
+              <ul className="amazon-plan-list">
+                <li>
+                  <span className="amazon-plan-ok">✓</span>
+                  <div>
+                    <strong>Conversão completa dos arquivos para o padrão Amazon KDP</strong>
+                    <p>Kindle, capa comum e capa dura — arquivos já finalizados pelo autor.</p>
+                  </div>
+                </li>
+                <li>
+                  <span className="amazon-plan-ok">✓</span>
+                  <div>
+                    <strong>Publicação direta na Amazon KDP</strong>
+                    <p>Nas três versões: Kindle, capa comum e capa dura.</p>
+                  </div>
+                </li>
+                <li>
+                  <span className="amazon-plan-ok">✓</span>
+                  <div>
+                    <strong>Livro disponibilizado para venda</strong>
+                    <p>Deixamos o livro ativo e disponível para compra na Amazon.</p>
+                  </div>
+                </li>
+                <li>
+                  <span className="amazon-plan-ok">✓</span>
+                  <div>
+                    <strong>Material de apoio com estratégias de venda na Amazon</strong>
+                    <p>Guia com orientações para divulgação e vendas do livro.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div className="amazon-plan-meta">
+              <div className="amazon-plan-meta-item">
+                <span className="amazon-plan-meta-label">Disponibilização para venda</span>
+                <p>Você recebe o livro à venda diretamente na Amazon — publicado dentro da sua própria conta de autor, pronto para os leitores comprarem.</p>
+              </div>
+              <div className="amazon-plan-meta-item">
+                <span className="amazon-plan-meta-label">Prazo de entrega</span>
+                <p>5 a 10 dias úteis, podendo ser entregue antes.</p>
+              </div>
+            </div>
+
+            <div className="amazon-plan-footer">
+              <p>Valor do investimento e formas de pagamento sob consulta.</p>
+              <button className="btn-gold" onClick={() => setPlan("Amazon KDP Completo")}>
+                Solicitar valor e formas de pagamento
+                <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -785,12 +841,11 @@ export default function HomePage() {
                 <select ref={formPlanRef} className="form-input" value={selectedPlan} onChange={(e) => setSelectedPlan(e.target.value)}>
                   <option value="">Não sei qual escolher ainda</option>
                   <option value="Essencial">{t("p1.name")}</option>
-                  <option value="Avançado">{t("p2.name")}</option>
                   <option value="Premium">{t("p3.name")}</option>
-                  <option value="Ouro Exclusivo">{t("p4.name")}</option>
-                  <option value="Plano Especial">Plano Especial Ultra</option>
+                  <option value="Ultra Premium">Ultra Premium</option>
                   <option value="Registo">{t("srv1.name")}</option>
                   <option value="Amazon">{t("srv2.name")}</option>
+                  <option value="Amazon KDP Completo">Publicação Amazon KDP Completo</option>
                   <option value="Tradução">{t("srv3.name")}</option>
                   <option value="Audiobook">{t("audio.name")}</option>
                 </select>
@@ -845,10 +900,9 @@ export default function HomePage() {
                   <label className="form-label">Plano</label>
                   <select className="form-input">
                     <option>{t("p1.name")}</option>
-                    <option>{t("p2.name")}</option>
                     <option>{t("p3.name")}</option>
-                    <option>{t("p4.name")}</option>
-                    <option>Plano Especial Ultra</option>
+                    <option>Ultra Premium</option>
+                    <option>Publicação Amazon KDP Completo</option>
                   </select>
                 </div>
               </div>
@@ -872,12 +926,12 @@ export default function HomePage() {
               <ul>
                 <li><a href="#planos">Diagramação</a></li>
                 <li><a href="#planos">Capas</a></li>
-                <li><a href="#servicos">Amazon KDP</a></li>
+                <li><a href="#publicacao-amazon">Publicação Amazon KDP Completo</a></li>
                 <li><a href="/audiobook">Audiobook</a></li>
                 <li><a href="/traducao">Tradução</a></li>
                 <li><a href="/cinematografico">Vídeo Cinematográfico</a></li>
                 <li><a href="/calculadora-kdp">Calculadora KDP</a></li>
-                <li><a href="#especial">Plano Especial Ultra</a></li>
+                <li><a href="#especial">Ultra Premium</a></li>
               </ul>
             </div>
             <div className="footer-col">
@@ -982,7 +1036,7 @@ export default function HomePage() {
                   <p className="quiz-q">Qual é o perfil de investimento que prefere?</p>
                   <p className="quiz-hint">Temos opções para todos os perfis.</p>
                   <div className="quiz-options">
-                    {[["basic","Essencial — quero o básico bem feito"],["mid","Avançado / Premium — quero qualidade"],["full","Quero o pacote mais completo"]].map(([v,label]) => (
+                    {[["basic","Essencial — quero o básico bem feito"],["mid","Premium — quero qualidade"],["full","Quero o pacote mais completo"]].map(([v,label]) => (
                       <div key={v} className={`quiz-opt${quizAnswers.q4 === v ? " selected" : ""}`} onClick={() => pickAnswer("q4", v)}>
                         <span>{label}</span>
                       </div>
