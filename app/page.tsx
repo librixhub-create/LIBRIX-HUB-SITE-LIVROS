@@ -621,6 +621,14 @@ export default function HomePage() {
               </div>
               <a href="/calculadora-kdp" className="srv-arrow">Ver página <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" /></svg></a>
             </div>
+            <div className="srv-row reveal">
+              <span className="srv-num">09</span>
+              <div className="srv-content">
+                <h3>Criação e Gestão de Sites para Autores</h3>
+                <p>Criamos, hospedamos e cuidamos do seu site — com blog e mini-loja integrada para vender livros e produtos, páginas de apresentação de projetos e captação de leads que convertem visitantes em vendas.</p>
+              </div>
+              <a href="#orcamento" className="srv-arrow">Solicitar <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" /></svg></a>
+            </div>
           </div>
         </div>
       </section>
@@ -855,6 +863,7 @@ export default function HomePage() {
                   <option value="Amazon KDP Completo">Publicação Amazon KDP Completo</option>
                   <option value="Tradução">{t("srv3.name")}</option>
                   <option value="Audiobook">{t("audio.name")}</option>
+                  <option value="Sites">Criação e Gestão de Sites</option>
                 </select>
               </div>
               <div className="form-group"><textarea ref={formMsgRef} className="form-input" placeholder="Descreva o seu projeto: tipo de livro, número de páginas..." required /></div>
@@ -910,6 +919,7 @@ export default function HomePage() {
                     <option>{t("p3.name")}</option>
                     <option>Ultra Premium</option>
                     <option>Publicação Amazon KDP Completo</option>
+                    <option>Criação e Gestão de Sites</option>
                   </select>
                 </div>
               </div>
