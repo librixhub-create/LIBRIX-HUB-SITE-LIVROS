@@ -608,6 +608,14 @@ export default function HomePage() {
               </div>
               <a href="/cinematografico" className="srv-arrow">Ver página <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" /></svg></a>
             </div>
+            <div className="srv-row reveal">
+              <span className="srv-num">08</span>
+              <div className="srv-content">
+                <h3>Calculadora de Precificação KDP</h3>
+                <p>Ferramenta gratuita: simule o custo de impressão e os royalties da Amazon para Kindle, capa comum e capa dura.</p>
+              </div>
+              <a href="/calculadora-kdp" className="srv-arrow">Ver página <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" /></svg></a>
+            </div>
           </div>
         </div>
       </section>
@@ -868,6 +876,7 @@ export default function HomePage() {
                 <li><a href="/audiobook">Audiobook</a></li>
                 <li><a href="/traducao">Tradução</a></li>
                 <li><a href="/cinematografico">Vídeo Cinematográfico</a></li>
+                <li><a href="/calculadora-kdp">Calculadora KDP</a></li>
                 <li><a href="#especial">Plano Especial Ultra</a></li>
               </ul>
             </div>
