@@ -69,6 +69,13 @@ const T: Record<string, Record<string, string>> = {
     "footer.desc": "Transformamos as suas ideias em livros profissionais.",
     "footer.srv": "Serviços", "footer.co": "Empresa",
     "quiz.nok": "Não sabe qual plano escolher? Faça o quiz",
+    "addons.title": "Outros planos",
+    "addon1.name": "Tradução", "addon1.desc": "Leve o seu livro a novos mercados",
+    "addon1.f1": "Tradução para múltiplos idiomas", "addon1.f2": "Tradutor nativo especializado",
+    "addon1.f3": "Mantemos a sua voz e estilo", "addon1.f4": "Entrega em Word + PDF",
+    "addon2.name": "Site Profissional", "addon2.desc": "Presença digital para autores",
+    "addon2.f1": "Site profissional com domínio próprio", "addon2.f2": "Blog + mini-loja integrada",
+    "addon2.f3": "Página de apresentação de projetos", "addon2.f4": "Hospedagem e manutenção incluídas",
   },
   "pt-br": {
     "nav.plans": "Planos", "nav.services": "Serviços", "nav.books": "Livros",
@@ -132,6 +139,13 @@ const T: Record<string, Record<string, string>> = {
     "footer.desc": "Transformamos suas ideias em livros profissionais.",
     "footer.srv": "Serviços", "footer.co": "Empresa",
     "quiz.nok": "Não sabe qual plano escolher? Faça o quiz",
+    "addons.title": "Outros planos",
+    "addon1.name": "Tradução", "addon1.desc": "Leve seu livro a novos mercados",
+    "addon1.f1": "Tradução para múltiplos idiomas", "addon1.f2": "Tradutor nativo especializado",
+    "addon1.f3": "Mantemos sua voz e estilo", "addon1.f4": "Entrega em Word + PDF",
+    "addon2.name": "Site Profissional", "addon2.desc": "Presença digital para autores",
+    "addon2.f1": "Site profissional com domínio próprio", "addon2.f2": "Blog + mini-loja integrada",
+    "addon2.f3": "Página de apresentação de projetos", "addon2.f4": "Hospedagem e manutenção incluídas",
   },
   "es": {
     "nav.plans": "Planes", "nav.services": "Servicios", "nav.books": "Libros",
@@ -195,6 +209,13 @@ const T: Record<string, Record<string, string>> = {
     "footer.desc": "Transformamos tus ideas en libros profesionales.",
     "footer.srv": "Servicios", "footer.co": "Empresa",
     "quiz.nok": "¿No sabes qué plan elegir? Haz el quiz",
+    "addons.title": "Otros planes",
+    "addon1.name": "Traducción", "addon1.desc": "Lleva tu libro a nuevos mercados",
+    "addon1.f1": "Traducción a múltiples idiomas", "addon1.f2": "Traductor nativo especializado",
+    "addon1.f3": "Mantenemos tu voz y estilo", "addon1.f4": "Entrega en Word + PDF",
+    "addon2.name": "Sitio Web Profesional", "addon2.desc": "Presencia digital para autores",
+    "addon2.f1": "Sitio profesional con dominio propio", "addon2.f2": "Blog + minitienda integrada",
+    "addon2.f3": "Página de presentación de proyectos", "addon2.f4": "Hosting y mantenimiento incluidos",
   },
   "en": {
     "nav.plans": "Plans", "nav.services": "Services", "nav.books": "Books",
@@ -258,6 +279,13 @@ const T: Record<string, Record<string, string>> = {
     "footer.desc": "We transform your ideas into professional books.",
     "footer.srv": "Services", "footer.co": "Company",
     "quiz.nok": "Not sure which plan? Take the quiz",
+    "addons.title": "Other plans",
+    "addon1.name": "Translation", "addon1.desc": "Take your book to new markets",
+    "addon1.f1": "Translation into multiple languages", "addon1.f2": "Specialized native translator",
+    "addon1.f3": "We keep your voice and style", "addon1.f4": "Delivered in Word + PDF",
+    "addon2.name": "Professional Website", "addon2.desc": "Digital presence for authors",
+    "addon2.f1": "Professional site with your own domain", "addon2.f2": "Blog + integrated mini-store",
+    "addon2.f3": "Project showcase page", "addon2.f4": "Hosting and maintenance included",
   },
   "it": {
     "nav.plans": "Piani", "nav.services": "Servizi", "nav.books": "Libri",
@@ -321,6 +349,13 @@ const T: Record<string, Record<string, string>> = {
     "footer.desc": "Trasformiamo le tue idee in libri professionali.",
     "footer.srv": "Servizi", "footer.co": "Azienda",
     "quiz.nok": "Non sai quale piano scegliere? Fai il quiz",
+    "addons.title": "Altri piani",
+    "addon1.name": "Traduzione", "addon1.desc": "Porta il tuo libro in nuovi mercati",
+    "addon1.f1": "Traduzione in più lingue", "addon1.f2": "Traduttore madrelingua specializzato",
+    "addon1.f3": "Manteniamo la tua voce e il tuo stile", "addon1.f4": "Consegna in Word + PDF",
+    "addon2.name": "Sito Web Professionale", "addon2.desc": "Presenza digitale per autori",
+    "addon2.f1": "Sito professionale con dominio proprio", "addon2.f2": "Blog + mini-shop integrato",
+    "addon2.f3": "Pagina di presentazione dei progetti", "addon2.f4": "Hosting e manutenzione inclusi",
   },
 };
 
@@ -674,6 +709,31 @@ export default function HomePage() {
               <button className="plan-btn" onClick={() => setPlan("Ultra Premium")}>{t("plans.cta")}</button>
             </div>
           </div>
+
+          <p className="addons-label">{t("addons.title")}</p>
+          <div className="addons-grid">
+            <div className="addon-card reveal">
+              <p className="plan-name">{t("addon1.name")}</p>
+              <p className="plan-desc">{t("addon1.desc")}</p>
+              <ul className="plan-feats">
+                {["addon1.f1","addon1.f2","addon1.f3","addon1.f4"].map((k) => (
+                  <li key={k} className="plan-feat"><span className="plan-feat-ok">✓</span><span>{t(k)}</span></li>
+                ))}
+              </ul>
+              <button className="plan-btn" onClick={() => setPlan("Tradução")}>{t("plans.cta")}</button>
+            </div>
+            <div className="addon-card reveal">
+              <p className="plan-name">{t("addon2.name")}</p>
+              <p className="plan-desc">{t("addon2.desc")}</p>
+              <ul className="plan-feats">
+                {["addon2.f1","addon2.f2","addon2.f3","addon2.f4"].map((k) => (
+                  <li key={k} className="plan-feat"><span className="plan-feat-ok">✓</span><span>{t(k)}</span></li>
+                ))}
+              </ul>
+              <button className="plan-btn" onClick={() => setPlan("Sites")}>{t("plans.cta")}</button>
+            </div>
+          </div>
+
           <p style={{ textAlign: "center", marginTop: 28 }}>
             <button style={{ background: "none", border: "none", cursor: "pointer", color: "var(--gold)", font: "inherit", fontSize: ".82rem", textDecoration: "underline" }} onClick={openQuiz}>
               {t("quiz.nok")} →

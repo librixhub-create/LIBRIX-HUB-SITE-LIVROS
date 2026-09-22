@@ -238,6 +238,20 @@ nav a:hover { color: var(--ink); }
 .plan-card.featured .plan-btn { background: var(--ink); color: var(--cream); border-color: var(--ink); }
 .plan-card.featured .plan-btn:hover { background: var(--gold); color: var(--ink); border-color: var(--gold); }
 
+/* ── OTHER PLANS (ADD-ONS) ── */
+.addons-label {
+  text-align: center; font-size: .7rem; font-weight: 700;
+  letter-spacing: .08em; text-transform: uppercase; color: var(--ink3);
+  margin: 44px 0 16px;
+}
+.addons-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 14px; max-width: 620px; margin: 0 auto; }
+.addon-card {
+  background: var(--cream); border: 1px solid var(--border);
+  border-radius: var(--radius-lg); padding: 22px 20px;
+  transition: box-shadow .3s;
+}
+.addon-card:hover { box-shadow: var(--sh-lg); }
+
 /* ── PUBLISHED BOOKS ── */
 .books-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 14px; }
 .book-card {
@@ -527,6 +541,7 @@ footer {
 /* ── TABLET ── */
 @media (max-width: 1024px) {
   .plans-grid { grid-template-columns: repeat(2,1fr); }
+  .addons-grid { grid-template-columns: repeat(2,1fr); }
   .form-grid { grid-template-columns: 1fr; gap: 40px; }
   .form-info { text-align: center; }
   .form-card { max-width: 480px; margin: 0 auto; width: 100%; }
@@ -550,6 +565,7 @@ footer {
   .section-header { margin-bottom: 40px; }
   h2 { font-size: clamp(1.4rem, 5.5vw, 1.9rem); }
   .plans-grid { grid-template-columns: 1fr; max-width: 380px; margin: 0 auto; }
+  .addons-grid { grid-template-columns: 1fr; max-width: 380px; margin: 0 auto; }
   .books-grid { grid-template-columns: repeat(2,1fr); }
   .testi-grid { grid-template-columns: repeat(2,1fr); }
   .proof-inner { gap: 32px; }
