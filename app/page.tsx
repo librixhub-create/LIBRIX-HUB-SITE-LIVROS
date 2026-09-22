@@ -684,6 +684,7 @@ export default function HomePage() {
               { id: "v3", src: "/videos/depoimento-francisco.mp4", name: "Francisco", role: "Autor" },
               { id: "v4", src: "/videos/depoimento_regiane.mp4", name: "Regiane", role: "Autora" },
               { id: "v5", src: "/videos/depoimento_antoni.mp4", name: "Antoni", role: "Autor" },
+              { id: "v6", src: "https://pub-365929903eda4dfabe07f2537341c82c.r2.dev/D%C3%89BORA%20DEPOIMENTO%20LIBRIX%20.mp4", name: "Débora Souza", role: "Autora" },
             ].map(({ id, src, name, role }) => (
               <div key={id} className="testi-card reveal">
                 <div className="video-wrap" onClick={(e) => playVideo(id, e.currentTarget)}>
