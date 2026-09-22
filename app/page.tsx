@@ -335,7 +335,7 @@ const PUBLISHED_BOOKS = [
   { title: "Little Charlley: A little dog can change your life", genre: "Infantil", url: "https://www.amazon.com.br/dp/B0H4HWC16J", cover: "/covers/littlecharlley-en.jpg" },
   { title: "365 Questions About Life", genre: "Desenvolvimento pessoal", url: "https://www.amazon.com/dp/B0GYL2N8L1", cover: "/covers/365questions.jpg" },
   { title: "Minhas Ovelhas Queridas: Uma História de Amor, Fé e Propósito", genre: "Espiritualidade", url: "https://www.amazon.com.br/dp/B0HKD5ZZ7G", cover: "/covers/ovelhasqueridas.jpg" },
-  { title: "Força na Fraqueza: Vencendo no Poder de Cristo", genre: "Espiritualidade", url: "https://www.amazon.com/dp/B08DXNKMY2", cover: "/covers/forcanafraqueza.jpg" },
+  { title: "A Força na Fraqueza", genre: "Espiritualidade", url: "https://www.amazon.com/dp/B0GZH8P7Y2", cover: "/covers/forcanafraqueza.jpg" },
 ] as const;
 
 const WA_SVG = (
