@@ -10,8 +10,8 @@ const T: Record<string, Record<string, string>> = {
   "pt-pt": {
     "nav.plans": "Planos", "nav.services": "Serviços", "nav.books": "Livros",
     "nav.testimonials": "Depoimentos", "nav.contact": "Contacto",
-    "books.label": "Portfólio", "books.title": "Livros que já publicámos",
-    "books.subtitle": "Alguns dos livros de autores que confiaram na Librix Hub — à venda hoje na Amazon.",
+    "books.label": "Portfólio", "books.title": "Livros que já publicámos — Em destaque",
+    "books.subtitle": "Já publicámos dezenas de livros — estes são apenas o destaque da semana, à venda hoje na Amazon.",
     "books.cta": "Ver na Amazon",
     "hero.badge": "Publicação Editorial Profissional",
     "hero.title": "Escreveu o livro. Agora deixe-nos torná-lo profissional.",
@@ -73,8 +73,8 @@ const T: Record<string, Record<string, string>> = {
   "pt-br": {
     "nav.plans": "Planos", "nav.services": "Serviços", "nav.books": "Livros",
     "nav.testimonials": "Depoimentos", "nav.contact": "Contato",
-    "books.label": "Portfólio", "books.title": "Livros que já publicamos",
-    "books.subtitle": "Alguns dos livros de autores que confiaram na Librix Hub — à venda hoje na Amazon.",
+    "books.label": "Portfólio", "books.title": "Livros que já publicamos — Em destaque",
+    "books.subtitle": "Já publicamos dezenas de livros — estes são apenas o destaque da semana, à venda hoje na Amazon.",
     "books.cta": "Ver na Amazon",
     "hero.badge": "Publicação Editorial Profissional",
     "hero.title": "Escreveu o livro. Agora deixe-nos torná-lo profissional.",
@@ -136,8 +136,8 @@ const T: Record<string, Record<string, string>> = {
   "es": {
     "nav.plans": "Planes", "nav.services": "Servicios", "nav.books": "Libros",
     "nav.testimonials": "Testimonios", "nav.contact": "Contacto",
-    "books.label": "Portafolio", "books.title": "Libros que ya publicamos",
-    "books.subtitle": "Algunos de los libros de autores que confiaron en Librix Hub — a la venta hoy en Amazon.",
+    "books.label": "Portafolio", "books.title": "Libros que ya publicamos — Destacados",
+    "books.subtitle": "Ya publicamos decenas de libros — estos son solo el destacado de la semana, a la venta hoy en Amazon.",
     "books.cta": "Ver en Amazon",
     "hero.badge": "Publicación Editorial Profesional",
     "hero.title": "Escribiste el libro. Ahora déjanos hacerlo profesional.",
@@ -199,8 +199,8 @@ const T: Record<string, Record<string, string>> = {
   "en": {
     "nav.plans": "Plans", "nav.services": "Services", "nav.books": "Books",
     "nav.testimonials": "Testimonials", "nav.contact": "Contact",
-    "books.label": "Portfolio", "books.title": "Books we've already published",
-    "books.subtitle": "Some of the books from authors who trusted Librix Hub — on sale today on Amazon.",
+    "books.label": "Portfolio", "books.title": "Books we've already published — Featured",
+    "books.subtitle": "We've already published dozens of books — these are just this week's featured picks, on sale today on Amazon.",
     "books.cta": "View on Amazon",
     "hero.badge": "Professional Editorial Publishing",
     "hero.title": "You wrote the book. Now let us make it professional.",
@@ -262,8 +262,8 @@ const T: Record<string, Record<string, string>> = {
   "it": {
     "nav.plans": "Piani", "nav.services": "Servizi", "nav.books": "Libri",
     "nav.testimonials": "Testimonianze", "nav.contact": "Contatto",
-    "books.label": "Portfolio", "books.title": "Libri che abbiamo già pubblicato",
-    "books.subtitle": "Alcuni dei libri di autori che si sono affidati a Librix Hub — in vendita oggi su Amazon.",
+    "books.label": "Portfolio", "books.title": "Libri che abbiamo già pubblicato — In evidenza",
+    "books.subtitle": "Abbiamo già pubblicato decine di libri — questi sono solo gli in evidenza della settimana, in vendita oggi su Amazon.",
     "books.cta": "Vedi su Amazon",
     "hero.badge": "Pubblicazione Editoriale Professionale",
     "hero.title": "Hai scritto il libro. Ora lascia che lo rendiamo professionale.",
@@ -335,6 +335,7 @@ const PUBLISHED_BOOKS = [
   { title: "Little Charlley: A little dog can change your life", genre: "Infantil", url: "https://www.amazon.com.br/dp/B0H4HWC16J", cover: "/covers/littlecharlley-en.jpg" },
   { title: "365 Questions About Life", genre: "Desenvolvimento pessoal", url: "https://www.amazon.com/dp/B0GYL2N8L1", cover: "/covers/365questions.jpg" },
   { title: "Minhas Ovelhas Queridas: Uma História de Amor, Fé e Propósito", genre: "Espiritualidade", url: "https://www.amazon.com.br/dp/B0HKD5ZZ7G", cover: "/covers/ovelhasqueridas.jpg" },
+  { title: "Força na Fraqueza: Vencendo no Poder de Cristo", genre: "Espiritualidade", url: "https://www.amazon.com/dp/B08DXNKMY2", cover: "/covers/forcanafraqueza.jpg" },
 ] as const;
 
 const WA_SVG = (
