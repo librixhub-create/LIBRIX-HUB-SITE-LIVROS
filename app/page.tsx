@@ -332,6 +332,9 @@ const PUBLISHED_BOOKS = [
   { title: "The Inverted Rose", genre: "Fantasia", url: "https://www.amazon.com.br/dp/B0HH16JX4T", cover: "/covers/invertedrose.jpg" },
   { title: "Produtos do Setor Segurador para Empreendedores", genre: "Negócios", url: "https://www.amazon.com.br/dp/B0H42R4VKB", cover: "/covers/setorsegurador.jpg" },
   { title: "Comfort Is Your Worst Enemy", genre: "Autoajuda", url: "https://www.amazon.com.br/dp/B0GVYVNWPF", cover: "/covers/comfort.jpg" },
+  { title: "Little Charlley: A little dog can change your life", genre: "Infantil", url: "https://www.amazon.com.br/dp/B0H4HWC16J", cover: "/covers/littlecharlley-en.jpg" },
+  { title: "365 Questions About Life", genre: "Desenvolvimento pessoal", url: "https://www.amazon.com/dp/B0GYL2N8L1", cover: "/covers/365questions.jpg" },
+  { title: "Minhas Ovelhas Queridas: Uma História de Amor, Fé e Propósito", genre: "Espiritualidade", url: "https://www.amazon.com.br/dp/B0HKD5ZZ7G", cover: "/covers/ovelhasqueridas.jpg" },
 ] as const;
 
 const WA_SVG = (
