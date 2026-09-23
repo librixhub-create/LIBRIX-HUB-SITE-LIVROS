@@ -76,6 +76,11 @@ const T: Record<string, Record<string, string>> = {
     "addon2.name": "Site Profissional", "addon2.desc": "Presença digital para autores",
     "addon2.f1": "Site profissional com domínio próprio", "addon2.f2": "Blog + mini-loja integrada",
     "addon2.f3": "Página de apresentação de projetos", "addon2.f4": "Hospedagem e manutenção incluídas",
+    "addon3.name": "Audiobook", "addon3.desc": "Áudios naturais e profissionais em qualquer idioma",
+    "addon3.f1": "Voz narrada original e humana", "addon3.f2": "Disponível em qualquer idioma",
+    "addon3.f3": "Masculina ou feminina", "addon3.f4": "Qualidade de estúdio profissional",
+    "ghost.name": "Ghostwriting",
+    "ghost.desc": "Tem uma história ou conhecimento mas não tem tempo (ou jeito) para escrever? Um dos nossos escritores profissionais escreve o livro inteiro por si, com base nas suas ideias, experiências ou entrevistas — e o livro sai publicado com o seu nome como autor. Serviço 100% confidencial, muito usado por empreendedores, especialistas e figuras públicas.",
   },
   "pt-br": {
     "nav.plans": "Planos", "nav.services": "Serviços", "nav.books": "Livros",
@@ -146,6 +151,11 @@ const T: Record<string, Record<string, string>> = {
     "addon2.name": "Site Profissional", "addon2.desc": "Presença digital para autores",
     "addon2.f1": "Site profissional com domínio próprio", "addon2.f2": "Blog + mini-loja integrada",
     "addon2.f3": "Página de apresentação de projetos", "addon2.f4": "Hospedagem e manutenção incluídas",
+    "addon3.name": "Audiobook", "addon3.desc": "Áudios naturais e profissionais em qualquer idioma",
+    "addon3.f1": "Voz narrada original e humana", "addon3.f2": "Disponível em qualquer idioma",
+    "addon3.f3": "Masculina ou feminina", "addon3.f4": "Qualidade de estúdio profissional",
+    "ghost.name": "Ghostwriting",
+    "ghost.desc": "Tem uma história ou conhecimento mas não tem tempo (ou jeito) para escrever? Um dos nossos escritores profissionais escreve o livro inteiro por você, com base nas suas ideias, experiências ou entrevistas — e o livro sai publicado com seu nome como autor. Serviço 100% confidencial, muito usado por empreendedores, especialistas e figuras públicas.",
   },
   "es": {
     "nav.plans": "Planes", "nav.services": "Servicios", "nav.books": "Libros",
@@ -216,6 +226,11 @@ const T: Record<string, Record<string, string>> = {
     "addon2.name": "Sitio Web Profesional", "addon2.desc": "Presencia digital para autores",
     "addon2.f1": "Sitio profesional con dominio propio", "addon2.f2": "Blog + minitienda integrada",
     "addon2.f3": "Página de presentación de proyectos", "addon2.f4": "Hosting y mantenimiento incluidos",
+    "addon3.name": "Audiolibro", "addon3.desc": "Audios naturales y profesionales en cualquier idioma",
+    "addon3.f1": "Voz narrada original y humana", "addon3.f2": "Disponible en cualquier idioma",
+    "addon3.f3": "Masculina o femenina", "addon3.f4": "Calidad de estudio profesional",
+    "ghost.name": "Ghostwriting",
+    "ghost.desc": "¿Tienes una historia o un conocimiento pero no tienes tiempo (o facilidad) para escribir? Uno de nuestros escritores profesionales escribe el libro completo por ti, basado en tus ideas, experiencias o entrevistas — y el libro se publica con tu nombre como autor. Servicio 100% confidencial, muy usado por emprendedores, especialistas y figuras públicas.",
   },
   "en": {
     "nav.plans": "Plans", "nav.services": "Services", "nav.books": "Books",
@@ -286,6 +301,11 @@ const T: Record<string, Record<string, string>> = {
     "addon2.name": "Professional Website", "addon2.desc": "Digital presence for authors",
     "addon2.f1": "Professional site with your own domain", "addon2.f2": "Blog + integrated mini-store",
     "addon2.f3": "Project showcase page", "addon2.f4": "Hosting and maintenance included",
+    "addon3.name": "Audiobook", "addon3.desc": "Natural, professional audio in any language",
+    "addon3.f1": "Original, human narrated voice", "addon3.f2": "Available in any language",
+    "addon3.f3": "Male or female", "addon3.f4": "Professional studio quality",
+    "ghost.name": "Ghostwriting",
+    "ghost.desc": "Have a story or expertise but no time (or knack) for writing? One of our professional writers writes the entire book for you, based on your ideas, experiences or interviews — and the book is published under your name as the author. A fully confidential service, widely used by entrepreneurs, specialists and public figures.",
   },
   "it": {
     "nav.plans": "Piani", "nav.services": "Servizi", "nav.books": "Libri",
@@ -356,6 +376,11 @@ const T: Record<string, Record<string, string>> = {
     "addon2.name": "Sito Web Professionale", "addon2.desc": "Presenza digitale per autori",
     "addon2.f1": "Sito professionale con dominio proprio", "addon2.f2": "Blog + mini-shop integrato",
     "addon2.f3": "Pagina di presentazione dei progetti", "addon2.f4": "Hosting e manutenzione inclusi",
+    "addon3.name": "Audiobook", "addon3.desc": "Audio naturali e professionali in qualsiasi lingua",
+    "addon3.f1": "Voce narrante originale e umana", "addon3.f2": "Disponibile in qualsiasi lingua",
+    "addon3.f3": "Maschile o femminile", "addon3.f4": "Qualità da studio professionale",
+    "ghost.name": "Ghostwriting",
+    "ghost.desc": "Hai una storia o una competenza ma non hai tempo (o talento) per scrivere? Uno dei nostri scrittori professionisti scrive l'intero libro per te, basandosi sulle tue idee, esperienze o interviste — e il libro viene pubblicato con il tuo nome come autore. Servizio completamente riservato, molto usato da imprenditori, specialisti e personaggi pubblici.",
   },
 };
 
@@ -667,6 +692,14 @@ export default function HomePage() {
               </div>
               <a href="#orcamento" className="srv-arrow">Solicitar <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" /></svg></a>
             </div>
+            <div className="srv-row reveal">
+              <span className="srv-num">10</span>
+              <div className="srv-content">
+                <h3>{t("ghost.name")}</h3>
+                <p>{t("ghost.desc")}</p>
+              </div>
+              <a href="#orcamento" className="srv-arrow">Solicitar <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" /></svg></a>
+            </div>
           </div>
         </div>
       </section>
@@ -734,6 +767,16 @@ export default function HomePage() {
                 ))}
               </ul>
               <button className="plan-btn" onClick={() => setPlan("Sites")}>{t("plans.cta")}</button>
+            </div>
+            <div className="addon-card reveal">
+              <p className="plan-name">{t("addon3.name")}</p>
+              <p className="plan-desc">{t("addon3.desc")}</p>
+              <ul className="plan-feats">
+                {["addon3.f1","addon3.f2","addon3.f3","addon3.f4"].map((k) => (
+                  <li key={k} className="plan-feat"><span className="plan-feat-ok">✓</span><span>{t(k)}</span></li>
+                ))}
+              </ul>
+              <button className="plan-btn" onClick={() => setPlan("Audiobook")}>{t("plans.cta")}</button>
             </div>
           </div>
 
@@ -927,6 +970,7 @@ export default function HomePage() {
                   <option value="Tradução">{t("srv3.name")}</option>
                   <option value="Audiobook">{t("audio.name")}</option>
                   <option value="Sites">Criação e Gestão de Sites</option>
+                  <option value="Ghostwriting">{t("ghost.name")}</option>
                 </select>
               </div>
               <div className="form-group"><textarea ref={formMsgRef} className="form-input" placeholder="Descreva o seu projeto: tipo de livro, número de páginas..." required /></div>
@@ -983,6 +1027,7 @@ export default function HomePage() {
                     <option>Ultra Premium</option>
                     <option>Publicação Amazon KDP Completo</option>
                     <option>Criação e Gestão de Sites</option>
+                    <option>{t("ghost.name")}</option>
                   </select>
                 </div>
               </div>
@@ -1009,6 +1054,7 @@ export default function HomePage() {
                 <li><a href="#publicacao-amazon">Publicação Amazon KDP Completo</a></li>
                 <li><a href="/audiobook">Audiobook</a></li>
                 <li><a href="/traducao">Tradução</a></li>
+                <li><a href="#servicos">{t("ghost.name")}</a></li>
                 <li><a href="/cinematografico">Vídeo Cinematográfico</a></li>
                 <li><a href="/calculadora-kdp">Calculadora KDP</a></li>
                 <li><a href="#especial">Ultra Premium</a></li>
