@@ -388,8 +388,6 @@ const PUBLISHED_BOOKS = [
   { title: "O Pequeno Charlley", genre: "Infantil", url: "https://www.amazon.com.br/dp/B0H4P4CJ2H", cover: "/covers/charlley.jpg" },
   { title: "Governe-se: Metanoia, a Ciência do Inconsciente ao Altar", genre: "Desenvolvimento pessoal", url: "https://www.amazon.com.br/dp/B0HFGRBXVK", cover: "/covers/governese.jpg" },
   { title: "O Diário de uma Diarista", genre: "Romance", url: "https://www.amazon.com.br/dp/B0HBLSBFV8", cover: "/covers/diariodiarista.jpg" },
-  { title: "Entre Mundos: O Chamado", genre: "Ficção", url: "https://www.amazon.com.br/dp/B0H7VNSZB6", cover: "/covers/entremundos.jpg" },
-  { title: "The Inverted Rose", genre: "Fantasia", url: "https://www.amazon.com.br/dp/B0HH16JX4T", cover: "/covers/invertedrose.jpg" },
   { title: "Produtos do Setor Segurador para Empreendedores", genre: "Negócios", url: "https://www.amazon.com.br/dp/B0H42R4VKB", cover: "/covers/setorsegurador.jpg" },
   { title: "Comfort Is Your Worst Enemy", genre: "Autoajuda", url: "https://www.amazon.com.br/dp/B0GVYVNWPF", cover: "/covers/comfort.jpg" },
   { title: "Little Charlley: A little dog can change your life", genre: "Infantil", url: "https://www.amazon.com.br/dp/B0H4HWC16J", cover: "/covers/littlecharlley-en.jpg" },
@@ -400,6 +398,7 @@ const PUBLISHED_BOOKS = [
   { title: "Minhas Ovelhas Queridas: Uma História de Amor, Fé e Propósito", genre: "Espiritualidade", url: "https://www.amazon.com.br/dp/B0HKD5ZZ7G", cover: "/covers/ovelhasqueridas.jpg" },
   { title: "A Força na Fraqueza", genre: "Espiritualidade", url: "https://www.amazon.com/dp/B0GZH8P7Y2", cover: "/covers/forcanafraqueza.jpg" },
   { title: "Recalculando a Rota: O que a Tempestade Revela, Deus Já Havia Prometido", genre: "Espiritualidade", url: "https://www.amazon.com/dp/B0HK4Z51FZ", cover: "/covers/recalculandoarota.jpg" },
+  { title: "Perdão que Restaura Casamento", genre: "Espiritualidade", url: "https://www.amazon.com.br/dp/B0HM87J8XR", cover: "/covers/perdaorestaura.jpg" },
 ] as const;
 
 const WA_SVG = (
