@@ -400,6 +400,7 @@ const PUBLISHED_BOOKS = [
   { title: "Recalculando a Rota: O que a Tempestade Revela, Deus Já Havia Prometido", genre: "Espiritualidade", url: "https://www.amazon.com/dp/B0HK4Z51FZ", cover: "/covers/recalculandoarota.jpg" },
   { title: "Perdão que Restaura Casamento", genre: "Espiritualidade", url: "https://www.amazon.com.br/dp/B0HM87J8XR", cover: "/covers/perdaorestaura.jpg" },
   { title: "Life and Journey of an Entrepreneur", genre: "Negócios", url: "https://www.amazon.com/dp/B0HP8YR4JR", cover: "/covers/lifejourney.jpg" },
+  { title: "Ninguém Deve + Que Eu", genre: "Desenvolvimento pessoal", url: "https://www.amazon.com/dp/B0HNGZBPBK", cover: "/covers/ninguemdeve.jpg" },
 ] as const;
 
 const WA_SVG = (
