@@ -295,6 +295,13 @@ nav a:hover { color: var(--ink); }
 .testi-name { font-size: .75rem; font-weight: 600; color: #fff; }
 .testi-role { font-size: .62rem; color: rgba(255,255,255,.65); }
 
+.press-testi { max-width: 520px; margin: 40px auto 0; text-align: center; }
+.press-testi a { display: block; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; background: #fff; transition: box-shadow .22s; }
+.press-testi a:hover { box-shadow: var(--sh-md); }
+.press-testi img { display: block; width: 100%; height: auto; }
+.press-testi figcaption { margin-top: 12px; font-size: .85rem; color: var(--ink2); }
+.press-testi figcaption span { display: block; font-size: .72rem; opacity: .7; margin-top: 2px; }
+
 /* ── ULTRA (dark CTA) ── */
 .ultra-section { background: var(--dark); padding: 96px 32px; }
 .ultra-inner { max-width: 760px; margin: 0 auto; text-align: center; }

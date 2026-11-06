@@ -826,6 +826,15 @@ export default function HomePage() {
               </div>
             ))}
           </div>
+          <figure className="press-testi reveal">
+            <a href="https://www.jornaldeangola.ao/noticias/5/cultura/698888/estilista-angolana-lan%C3%A7a-em-portugal--livro-sobre-imigra%C3%A7%C3%A3o-e-maternidade" target="_blank" rel="noopener noreferrer">
+              <img src="/depoimento-gloria-silvia-jornal-de-angola.png" alt="Jornal de Angola: Estilista angolana lança em Portugal livro sobre imigração e maternidade — Glória Sílvia, autora de Recomeçar" loading="lazy" />
+            </a>
+            <figcaption>
+              <strong>Glória Sílvia</strong> · Recomeçar: A Coragem de uma Mãe Imigrante
+              <span>Jornal de Angola · 6/11/2026</span>
+            </figcaption>
+          </figure>
         </div>
       </section>
 
