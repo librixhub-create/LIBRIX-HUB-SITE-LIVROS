@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import LeadForm, { leadWhatsAppLink, leadWhatsAppLabel } from "./LeadForm";
 
 const WA_NUM = "5532998491620";
 const WA_BASE = `https://wa.me/${WA_NUM}`;
@@ -494,8 +495,11 @@ export default function HomePage() {
   function nextStep() { if (quizStep < 5) setQuizStep((s) => s + 1); else setQuizResult(computeQuizResult()); }
 
   const LANGS = [
-    { code: "pt-br", flag: "🇧🇷" }, { code: "pt-pt", flag: "🇵🇹" },
-    { code: "es", flag: "🇪🇸" }, { code: "en", flag: "🇬🇧" }, { code: "it", flag: "🇮🇹" },
+    { code: "pt-br", flag: "🇧🇷", label: "PT-BR", name: "Português (Brasil)" },
+    { code: "pt-pt", flag: "🇵🇹", label: "PT-PT", name: "Português (Portugal)" },
+    { code: "en", flag: "🇬🇧", label: "EN", name: "English" },
+    { code: "es", flag: "🇪🇸", label: "ES", name: "Español" },
+    { code: "it", flag: "🇮🇹", label: "IT", name: "Italiano" },
   ] as const;
 
   return (
@@ -514,8 +518,8 @@ export default function HomePage() {
             <a href="#orcamento">{t("nav.contact")}</a>
           </nav>
           <div className="lang-selector">
-            {LANGS.map(({ code, flag }) => (
-              <button key={code} className={`lang-btn${lang === code ? " active" : ""}`} onClick={() => setLang(code)}>{flag}</button>
+            {LANGS.map(({ code, label, name }) => (
+              <button key={code} type="button" title={name} aria-label={name} aria-pressed={lang === code} className={`lang-btn${lang === code ? " active" : ""}`} onClick={() => setLang(code)}>{label}</button>
             ))}
           </div>
           <button className="hamburger" onClick={() => setMobileOpen(!mobileOpen)} aria-label="Menu">
@@ -536,9 +540,9 @@ export default function HomePage() {
         <a href="#depoimentos" onClick={() => setMobileOpen(false)}>{t("nav.testimonials")}</a>
         <a href="#orcamento" onClick={() => setMobileOpen(false)}>{t("nav.contact")}</a>
         <div className="mobile-lang">
-          {LANGS.map(({ code, flag }) => (
-            <button key={code} className={`lang-btn${lang === code ? " active" : ""}`}
-              onClick={() => { setLang(code); setMobileOpen(false); }}>{flag}</button>
+          {LANGS.map(({ code, label, name }) => (
+            <button key={code} type="button" title={name} aria-label={name} aria-pressed={lang === code} className={`lang-btn${lang === code ? " active" : ""}`}
+              onClick={() => { setLang(code); setMobileOpen(false); }}>{label}</button>
           ))}
         </div>
       </div>
@@ -554,8 +558,24 @@ export default function HomePage() {
               {t("form.label")}
               <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
             </a>
+            <a href={leadWhatsAppLink(lang)} target="_blank" rel="noopener noreferrer" className="btn-primary btn-wa">{leadWhatsAppLabel(lang)}</a>
             <a href="#planos" className="btn-outline">{t("nav.plans")}</a>
           </div>
+          <LeadForm
+            lang={lang}
+            services={[
+              { value: "Essencial", label: t("p1.name") },
+              { value: "Premium", label: t("p3.name") },
+              { value: "Ultra Premium", label: "Ultra Premium" },
+              { value: "Registo", label: t("srv1.name") },
+              { value: "Amazon", label: t("srv2.name") },
+              { value: "Amazon KDP Completo", label: "Amazon KDP Completo" },
+              { value: "Tradução", label: t("srv3.name") },
+              { value: "Audiobook", label: t("audio.name") },
+              { value: "Sites", label: "Sites" },
+              { value: "Ghostwriting", label: t("ghost.name") },
+            ]}
+          />
           <div className="hero-strip">
             <span>Diagramação</span>
             <span>Capas</span>
@@ -807,6 +827,7 @@ export default function HomePage() {
               { id: "v5", src: "/videos/depoimento_antoni.mp4", name: "Antoni", role: "Autor" },
               { id: "v6", src: "https://pub-365929903eda4dfabe07f2537341c82c.r2.dev/D%C3%89BORA%20DEPOIMENTO%20LIBRIX%20.mp4", name: "Débora Souza", role: "Autora" },
               { id: "v7", src: "https://pub-365929903eda4dfabe07f2537341c82c.r2.dev/DEPOIMENTO%20DAYANE%20LIBRIX/WhatsApp%20Video%202026-09-22%20at%2008.07.28.mp4", name: "Dayane Samara", role: "Autora" },
+              { id: "v8", src: "https://pub-365929903eda4dfabe07f2537341c82c.r2.dev/LIBRIX%20APP%20MARKTPLACE/WhatsApp%20Video%202026-10-06%20at%2010.50.45.mp4", name: "Pr. Ântoni Almeida", role: "Autor" },
             ].map(({ id, src, name, role }) => (
               <div key={id} className="testi-card reveal">
                 <div className="video-wrap" onClick={(e) => playVideo(id, e.currentTarget)}>
@@ -1077,6 +1098,7 @@ export default function HomePage() {
                 <li><a href="#orcamento">Orçamento</a></li>
                 <li><a href="#depoimentos">Depoimentos</a></li>
                 <li><a href="#contacto">Contacto</a></li>
+                <li><a href="/afiliados">Programa de Afiliados</a></li>
                 <li><a href="https://librixhub.com">librixhub.com</a></li>
               </ul>
             </div>
