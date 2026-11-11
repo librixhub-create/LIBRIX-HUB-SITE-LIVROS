@@ -295,6 +295,8 @@ nav a:hover { color: var(--ink); }
 .testi-name { font-size: .75rem; font-weight: 600; color: #fff; }
 .testi-role { font-size: .62rem; color: rgba(255,255,255,.65); }
 
+.cta-proof { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; padding: 28px 24px; background: var(--cream2); border-bottom: 1px solid var(--border); }
+.cta-proof .btn-gold { font-size: .95rem; padding: 14px 28px; box-shadow: 0 8px 24px -10px rgba(201,168,76,.7); }
 .proof-grid { list-style: none; display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; max-width: 900px; margin: 40px auto 0; padding: 0; }
 .proof-grid li { border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; background: var(--cream3); }
 .proof-grid img { display: block; width: 100%; aspect-ratio: 3/4; object-fit: cover; object-position: top; }

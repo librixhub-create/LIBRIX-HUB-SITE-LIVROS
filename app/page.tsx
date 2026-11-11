@@ -12,6 +12,7 @@ const T: Record<string, Record<string, string>> = {
     "nav.plans": "Planos", "nav.services": "Serviços", "nav.books": "Livros",
     "nav.testimonials": "Depoimentos", "nav.contact": "Contacto",
     "books.label": "Portfólio", "books.title": "Livros que já publicámos — Em destaque",
+    "cta.books": "Ver livros publicados de autores em destaque", "cta.testi": "Ver depoimentos de clientes",
     "books.subtitle": "Já publicámos dezenas de livros — estes são apenas o destaque da semana, à venda hoje na Amazon.",
     "books.cta": "Ver na Amazon",
     "hero.badge": "Publicação Editorial Profissional",
@@ -87,6 +88,7 @@ const T: Record<string, Record<string, string>> = {
     "nav.plans": "Planos", "nav.services": "Serviços", "nav.books": "Livros",
     "nav.testimonials": "Depoimentos", "nav.contact": "Contato",
     "books.label": "Portfólio", "books.title": "Livros que já publicamos — Em destaque",
+    "cta.books": "Ver livros publicados de autores em destaque", "cta.testi": "Ver depoimentos de clientes",
     "books.subtitle": "Já publicamos dezenas de livros — estes são apenas o destaque da semana, à venda hoje na Amazon.",
     "books.cta": "Ver na Amazon",
     "hero.badge": "Publicação Editorial Profissional",
@@ -162,6 +164,7 @@ const T: Record<string, Record<string, string>> = {
     "nav.plans": "Planes", "nav.services": "Servicios", "nav.books": "Libros",
     "nav.testimonials": "Testimonios", "nav.contact": "Contacto",
     "books.label": "Portafolio", "books.title": "Libros que ya publicamos — Destacados",
+    "cta.books": "Ver libros publicados de autores destacados", "cta.testi": "Ver testimonios de clientes",
     "books.subtitle": "Ya publicamos decenas de libros — estos son solo el destacado de la semana, a la venta hoy en Amazon.",
     "books.cta": "Ver en Amazon",
     "hero.badge": "Publicación Editorial Profesional",
@@ -237,6 +240,7 @@ const T: Record<string, Record<string, string>> = {
     "nav.plans": "Plans", "nav.services": "Services", "nav.books": "Books",
     "nav.testimonials": "Testimonials", "nav.contact": "Contact",
     "books.label": "Portfolio", "books.title": "Books we've already published — Featured",
+    "cta.books": "See published books by featured authors", "cta.testi": "See customer testimonials",
     "books.subtitle": "We've already published dozens of books — these are just this week's featured picks, on sale today on Amazon.",
     "books.cta": "View on Amazon",
     "hero.badge": "Professional Editorial Publishing",
@@ -312,6 +316,7 @@ const T: Record<string, Record<string, string>> = {
     "nav.plans": "Piani", "nav.services": "Servizi", "nav.books": "Libri",
     "nav.testimonials": "Testimonianze", "nav.contact": "Contatto",
     "books.label": "Portfolio", "books.title": "Libri che abbiamo già pubblicato — In evidenza",
+    "cta.books": "Vedi i libri pubblicati dagli autori in evidenza", "cta.testi": "Vedi le testimonianze dei clienti",
     "books.subtitle": "Abbiamo già pubblicato decine di libri — questi sono solo gli in evidenza della settimana, in vendita oggi su Amazon.",
     "books.cta": "Vedi su Amazon",
     "hero.badge": "Pubblicazione Editoriale Professionale",
@@ -607,6 +612,12 @@ export default function HomePage() {
             <span className="proof-label">Satisfação</span>
           </div>
         </div>
+      </div>
+
+      {/* ATALHOS DE PROVA SOCIAL */}
+      <div className="cta-proof">
+        <a href="#livros" className="btn-gold">{t("cta.books")} →</a>
+        <a href="#depoimentos" className="btn-outline">{t("cta.testi")}</a>
       </div>
 
       {/* PUBLISHED BOOKS */}
