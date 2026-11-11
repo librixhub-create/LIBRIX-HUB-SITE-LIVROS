@@ -828,10 +828,19 @@ export default function HomePage() {
               { id: "v6", src: "https://pub-365929903eda4dfabe07f2537341c82c.r2.dev/D%C3%89BORA%20DEPOIMENTO%20LIBRIX%20.mp4", name: "Débora Souza", role: "Autora" },
               { id: "v7", src: "https://pub-365929903eda4dfabe07f2537341c82c.r2.dev/DEPOIMENTO%20DAYANE%20LIBRIX/WhatsApp%20Video%202026-09-22%20at%2008.07.28.mp4", name: "Dayane Samara", role: "Autora" },
               { id: "v8", src: "https://pub-365929903eda4dfabe07f2537341c82c.r2.dev/LIBRIX%20APP%20MARKTPLACE/WhatsApp%20Video%202026-10-06%20at%2010.50.45.mp4", name: "Pr. Ântoni Almeida", role: "Autor" },
-            ].map(({ id, src, name, role }) => (
+              { id: "v9", src: "/depoimentos/luciane-medina.mp4", poster: "/depoimentos/luciane-medina.jpg", name: "Luciane Medina", role: "Autora · Nova Zelândia" },
+              { id: "v10", src: "/depoimentos/joao-simao.mp4", poster: "/depoimentos/joao-simao.jpg", name: "João Simão", role: "Autor · brasileiro em Portugal" },
+              { id: "v11", src: "/depoimentos/mano-patrick.mp4", poster: "/depoimentos/mano-patrick.jpg", name: "Mano Patrick", role: "Autor de Amor em Ação" },
+              { id: "v12", src: "/depoimentos/marcelo-gomes-ribeiro.mp4", poster: "/depoimentos/marcelo-gomes-ribeiro.jpg", name: "Marcelo Gomes Ribeiro", role: "Autor de O Pequeno Charley" },
+              { id: "v13", src: "/depoimentos/graciela.mp4", poster: "/depoimentos/graciela.jpg", name: "Graciela", role: "Autora de O Código da Pele Negra" },
+              { id: "v14", src: "/depoimentos/graciela-livro-impresso.mp4", poster: "/depoimentos/graciela-livro-impresso.jpg", name: "Graciela", role: "Livro impresso" },
+              { id: "v15", src: "/depoimentos/edjane-farias.mp4", poster: "/depoimentos/edjane-farias.jpg", name: "Edjane Farias", role: "Autora de Minhas ovelhas queridas" },
+              { id: "v16", src: "/depoimentos/cliente-livro-impresso.mp4", poster: "/depoimentos/cliente-livro-impresso.jpg", name: "Cliente Librix", role: "Cliente que imprimiu o livro" },
+              { id: "v17", src: "/depoimentos/gloria-silvia-imprensa.mp4", poster: "/depoimentos/gloria-silvia-imprensa.jpg", name: "Glória Sílvia", role: "Autora de Recomeçar · imprensa" },
+            ].map(({ id, src, name, role, poster }) => (
               <div key={id} className="testi-card reveal">
                 <div className="video-wrap" onClick={(e) => playVideo(id, e.currentTarget)}>
-                  <video id={id} preload="metadata">
+                  <video id={id} preload="metadata" playsInline poster={poster}>
                     <source src={src} type="video/mp4" />
                   </video>
                   <div className="video-ov">
@@ -847,6 +856,18 @@ export default function HomePage() {
               </div>
             ))}
           </div>
+          <ul className="proof-grid reveal">
+            {[
+              { src: "/depoimentos/mensagem-luciane.jpg", name: "Luciane Medina", caption: "Mensagem da autora após a publicação", alt: "Mensagem de agradecimento da autora Luciane Medina à Librix Hub" },
+              { src: "/depoimentos/governe-se-europress.jpg", name: "Dayane Samara", caption: "Edição, impressão e publicação na Amazon", alt: "Livro Governe-se impresso pela gráfica Europress e publicado na Amazon" },
+              { src: "/depoimentos/livros-publicados-amazon.jpg", name: "Librix Hub", caption: "Publicações em Kindle e capa comum", alt: "Três livros publicados pela Librix Hub na Amazon, em português e francês" },
+            ].map((item) => (
+              <li key={item.src}>
+                <img src={item.src} alt={item.alt} loading="lazy" />
+                <p><strong>{item.name}</strong><span>{item.caption}</span></p>
+              </li>
+            ))}
+          </ul>
           <figure className="press-testi reveal">
             <a href="https://www.jornaldeangola.ao/noticias/5/cultura/698888/estilista-angolana-lan%C3%A7a-em-portugal--livro-sobre-imigra%C3%A7%C3%A3o-e-maternidade" target="_blank" rel="noopener noreferrer">
               <img src="/depoimento-gloria-silvia-jornal-de-angola.png" alt="Jornal de Angola: Estilista angolana lança em Portugal livro sobre imigração e maternidade — Glória Sílvia, autora de Recomeçar" loading="lazy" />

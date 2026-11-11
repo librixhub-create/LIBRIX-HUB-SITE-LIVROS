@@ -295,6 +295,13 @@ nav a:hover { color: var(--ink); }
 .testi-name { font-size: .75rem; font-weight: 600; color: #fff; }
 .testi-role { font-size: .62rem; color: rgba(255,255,255,.65); }
 
+.proof-grid { list-style: none; display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; max-width: 900px; margin: 40px auto 0; padding: 0; }
+.proof-grid li { border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; background: var(--cream3); }
+.proof-grid img { display: block; width: 100%; aspect-ratio: 3/4; object-fit: cover; object-position: top; }
+.proof-grid p { padding: 10px 12px; font-size: .8rem; color: var(--ink2); }
+.proof-grid strong { display: block; color: var(--ink); }
+.proof-grid span { font-size: .72rem; }
+@media (max-width: 768px) { .proof-grid { grid-template-columns: 1fr; max-width: 320px; } }
 .press-testi { max-width: 520px; margin: 40px auto 0; text-align: center; }
 .press-testi a { display: block; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; background: #fff; transition: box-shadow .22s; }
 .press-testi a:hover { box-shadow: var(--sh-md); }
