@@ -16,8 +16,10 @@ const T: Record<string, Record<string, string>> = {
     "books.subtitle": "Já publicámos dezenas de livros — estes são apenas o destaque da semana, à venda hoje na Amazon.",
     "books.cta": "Ver na Amazon",
     "hero.badge": "Publicação Editorial Profissional",
-    "hero.title": "Escreveu o livro. Agora deixe-nos torná-lo profissional.",
-    "hero.subtitle": "Da formatação à Amazon KDP, cuidamos de cada detalhe para que o seu livro tenha a qualidade das grandes editoras.",
+    "hero.title": "O seu livro na Amazon. Com cara de best-seller.",
+    "hero.subtitle": "Diagramação, capa, ISBN e publicação na Amazon KDP — tudo com uma só equipa. Já publicámos mais de 127 livros.",
+    "hero.offer": "Orçamento grátis · resposta em até 24h",
+    "hero.live": "Autores a publicar agora",
     "form.label": "Orçamento Grátis",
     "form.title": "Qual é o plano ideal para o seu projeto?",
     "form.desc": "Conte-nos sobre o seu livro e ajudaremos a escolher o melhor plano. Resposta em menos de 24 horas.",
@@ -92,8 +94,10 @@ const T: Record<string, Record<string, string>> = {
     "books.subtitle": "Já publicamos dezenas de livros — estes são apenas o destaque da semana, à venda hoje na Amazon.",
     "books.cta": "Ver na Amazon",
     "hero.badge": "Publicação Editorial Profissional",
-    "hero.title": "Escreveu o livro. Agora deixe-nos torná-lo profissional.",
-    "hero.subtitle": "Da formatação à Amazon KDP, cuidamos de cada detalhe para que o seu livro tenha a qualidade das grandes editoras.",
+    "hero.title": "Seu livro na Amazon. Com cara de best-seller.",
+    "hero.subtitle": "Diagramação, capa, ISBN e publicação na Amazon KDP — tudo com uma só equipe. Já publicamos mais de 127 livros.",
+    "hero.offer": "Orçamento grátis · resposta em até 24h",
+    "hero.live": "Autores publicando agora",
     "form.label": "Orçamento Grátis",
     "form.title": "Qual é o plano ideal para seu projeto?",
     "form.desc": "Conte-nos sobre seu livro e ajudaremos a escolher o melhor plano. Resposta em menos de 24 horas.",
@@ -168,8 +172,10 @@ const T: Record<string, Record<string, string>> = {
     "books.subtitle": "Ya publicamos decenas de libros — estos son solo el destacado de la semana, a la venta hoy en Amazon.",
     "books.cta": "Ver en Amazon",
     "hero.badge": "Publicación Editorial Profesional",
-    "hero.title": "Escribiste el libro. Ahora déjanos hacerlo profesional.",
-    "hero.subtitle": "Desde el diseño hasta Amazon KDP, cuidamos cada detalle para que su libro tenga la calidad de las grandes editoriales.",
+    "hero.title": "Tu libro en Amazon. Con aspecto de best-seller.",
+    "hero.subtitle": "Maquetación, portada, ISBN y publicación en Amazon KDP — todo con un solo equipo. Ya publicamos más de 127 libros.",
+    "hero.offer": "Presupuesto gratis · respuesta en 24 h",
+    "hero.live": "Autores publicando ahora",
     "form.label": "Presupuesto Gratis",
     "form.title": "¿Cuál es el plan ideal para tu proyecto?",
     "form.desc": "Cuéntanos sobre tu libro y te ayudaremos a elegir el mejor plan. Respuesta en menos de 24 horas.",
@@ -244,8 +250,10 @@ const T: Record<string, Record<string, string>> = {
     "books.subtitle": "We've already published dozens of books — these are just this week's featured picks, on sale today on Amazon.",
     "books.cta": "View on Amazon",
     "hero.badge": "Professional Editorial Publishing",
-    "hero.title": "You wrote the book. Now let us make it professional.",
-    "hero.subtitle": "From formatting to Amazon KDP, we take care of every detail so your book has the quality of major publishers.",
+    "hero.title": "Your book on Amazon. Looking like a bestseller.",
+    "hero.subtitle": "Layout, cover, ISBN and Amazon KDP publishing — all with one team. We've already published 127+ books.",
+    "hero.offer": "Free quote · reply within 24h",
+    "hero.live": "Authors publishing now",
     "form.label": "Free Quote",
     "form.title": "What's the ideal plan for your project?",
     "form.desc": "Tell us about your book and we'll help you choose the best plan. Response within 24 hours.",
@@ -320,8 +328,10 @@ const T: Record<string, Record<string, string>> = {
     "books.subtitle": "Abbiamo già pubblicato decine di libri — questi sono solo gli in evidenza della settimana, in vendita oggi su Amazon.",
     "books.cta": "Vedi su Amazon",
     "hero.badge": "Pubblicazione Editoriale Professionale",
-    "hero.title": "Hai scritto il libro. Ora lascia che lo rendiamo professionale.",
-    "hero.subtitle": "Dalla formattazione ad Amazon KDP, ci occupiamo di ogni dettaglio affinché il tuo libro abbia la qualità delle grandi case editrici.",
+    "hero.title": "Il tuo libro su Amazon. Con l'aspetto di un bestseller.",
+    "hero.subtitle": "Impaginazione, copertina, ISBN e pubblicazione su Amazon KDP — tutto con un solo team. Abbiamo già pubblicato oltre 127 libri.",
+    "hero.offer": "Preventivo gratuito · risposta entro 24h",
+    "hero.live": "Autori in pubblicazione ora",
     "form.label": "Preventivo Gratuito",
     "form.title": "Qual è il piano ideale per il tuo progetto?",
     "form.desc": "Raccontaci del tuo libro e ti aiuteremo a scegliere il piano migliore. Risposta in meno di 24 ore.",
@@ -432,7 +442,7 @@ export default function HomePage() {
   const t = (key: string) => T[lang]?.[key] ?? T["pt-pt"]?.[key] ?? key;
 
   function renderH1(title: string) {
-    const phrases = ["torná-lo profissional", "hacerlo profesional", "make it professional", "lo rendiamo professionale"];
+    const phrases = ["best-seller", "bestseller"];
     for (const p of phrases) {
       const idx = title.toLowerCase().indexOf(p);
       if (idx !== -1) return <>{title.slice(0, idx)}<em>{title.slice(idx, idx + p.length)}</em>{title.slice(idx + p.length)}</>;
@@ -554,17 +564,23 @@ export default function HomePage() {
 
       {/* HERO */}
       <section className="hero">
+        <div className="hero-glow" aria-hidden="true" />
         <div className="hero-inner">
-          <span className="eyebrow" style={{ display: "block", marginBottom: 24 }}>{t("hero.badge")}</span>
-          <h1>{renderH1(t("hero.title"))}</h1>
-          <p className="hero-sub">{t("hero.subtitle")}</p>
-          <div className="hero-ctas">
-            <a href="#orcamento" className="btn-primary">
-              {t("form.label")}
-              <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
-            </a>
-            <a href={leadWhatsAppLink(lang)} target="_blank" rel="noopener noreferrer" className="btn-primary btn-wa">{leadWhatsAppLabel(lang)}</a>
-            <a href="#planos" className="btn-outline">{t("nav.plans")}</a>
+          <div className="hero-copy">
+            <span className="hero-live"><i aria-hidden="true" />{t("hero.live")}</span>
+            <span className="eyebrow" style={{ display: "block", marginBottom: 18 }}>{t("hero.badge")}</span>
+            <h1>{renderH1(t("hero.title"))}</h1>
+            <p className="hero-sub">{t("hero.subtitle")}</p>
+            <div className="hero-offer">{t("hero.offer")}</div>
+            <div className="hero-ctas">
+              <a href={leadWhatsAppLink(lang)} target="_blank" rel="noopener noreferrer" className="btn-primary btn-wa btn-pulse">{leadWhatsAppLabel(lang)}</a>
+              <a href="#planos" className="btn-outline btn-outline-light">{t("nav.plans")}</a>
+            </div>
+            <div className="hero-trust">
+              <span><b>127+</b> livros</span>
+              <span><b>12</b> países</span>
+              <span><b>98%</b> satisfação</span>
+            </div>
           </div>
           <LeadForm
             lang={lang}
@@ -581,16 +597,21 @@ export default function HomePage() {
               { value: "Ghostwriting", label: t("ghost.name") },
             ]}
           />
-          <div className="hero-strip">
-            <span>Diagramação</span>
-            <span>Capas</span>
-            <span>Amazon KDP</span>
-            <span>Tradução</span>
-            <span>Audiobook</span>
-            <span>Vídeo</span>
+        </div>
+        <div className="cover-marquee" aria-hidden="true">
+          <div className="cover-track">
+            {[...PUBLISHED_BOOKS, ...PUBLISHED_BOOKS].map((b, i) => (
+              <Image key={i} src={b.cover} alt="" width={110} height={165} sizes="110px" className="cover-tile" />
+            ))}
           </div>
         </div>
       </section>
+
+      {/* BARRA FIXA MOBILE */}
+      <div className="mobile-cta-bar">
+        <a href="#orcamento" className="btn-gold">{t("form.label")}</a>
+        <a href={leadWhatsAppLink(lang)} target="_blank" rel="noopener noreferrer" className="btn-primary btn-wa">{leadWhatsAppLabel(lang)}</a>
+      </div>
 
       {/* PROOF */}
       <div className="proof-strip">
