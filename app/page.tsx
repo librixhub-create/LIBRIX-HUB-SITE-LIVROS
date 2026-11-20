@@ -418,6 +418,7 @@ const PUBLISHED_BOOKS = [
   { title: "Life and Journey of an Entrepreneur", genre: "Negócios", url: "https://www.amazon.com/dp/B0HP8YR4JR", cover: "/covers/lifejourney.jpg" },
   { title: "Ninguém Deve + Que Eu", genre: "Desenvolvimento pessoal", url: "https://www.amazon.com/dp/B0HNGZBPBK", cover: "/covers/ninguemdeve.jpg" },
   { title: "Recomeçar: A Coragem de uma Mãe Imigrante", genre: "Memórias", url: "https://www.amazon.com/dp/B0HLW7NJXF", cover: "/covers/recomecar.jpg" },
+  { title: "Angola Dança! História, Música, Ritmos e Danças de um Povo que Fez o Mundo Dançar", genre: "Cultura e História", url: "https://www.amazon.com/dp/B0HS6BM2YB", cover: "/covers/angoladanca.jpg" },
 ] as const;
 
 const WA_SVG = (
