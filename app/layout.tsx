@@ -43,6 +43,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             alt=""
           />
         </noscript>
+        <script async src="https://librix-tracker.vercel.app/t.js" data-site="librixhub"></script>
       </head>
       <body>{children}</body>
     </html>
